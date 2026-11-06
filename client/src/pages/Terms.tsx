@@ -28,12 +28,12 @@ const sections = [
 export default function Terms() {
   return (
     <div className="site-shell"><SiteHeader /><main id="main-content" tabIndex={-1}>
-      <section className="policy-hero"><span className="eyebrow eyebrow-blue">The important bits</span><h1>Terms &amp;<br /><span>Conditions</span></h1><p>Draft for management review and legal approval.</p><div className="policy-meta">Last updated: [Insert Date]</div></section>
+      <section className="policy-hero"><span className="eyebrow eyebrow-blue">A few important details</span><h1>Terms &amp;<br /><span>Conditions</span></h1><p>Working draft for management review and legal approval.</p><div className="policy-meta">Last updated: [Insert Date]</div></section>
       <section className="policy-content">
-        <div className="draft-warning"><AlertTriangle size={22} /><div><strong>WORKING DRAFT — NOT FINAL</strong><p>This document must not be published as final until management has completed outstanding operational details and obtained appropriate legal review. In particular, review the Consumer Protection Act 68 of 2008, POPIA, child supervision, pool safety, attraction restrictions, insurance requirements and risk notices.</p></div></div>
-        <p className="policy-intro">Welcome to Splash Kids Waterpark. These Terms &amp; Conditions are intended to help ensure a safe, enjoyable and positive experience for all visitors. By purchasing admission, making a booking or entering the park, visitors agree to comply with applicable park rules and reasonable safety instructions, subject to their rights under South African law.</p>
+        <div className="draft-warning"><AlertTriangle size={22} /><div><strong>WORKING DRAFT — NOT FINAL</strong><p>Please do not publish this draft as the final policy. Management must complete the outstanding operational details and arrange a legal review. The review should cover the Consumer Protection Act 68 of 2008, POPIA, child supervision, pool and attraction safety, insurance, and any required risk notices.</p></div></div>
+        <p className="policy-intro">We want every visit to Splash Kids Waterpark to be safe, enjoyable and full of fun. These draft Terms &amp; Conditions describe the park rules and reasonable safety instructions visitors are expected to follow when they enter, make a booking or buy admission. All visitor rights under South African law continue to apply.</p>
         <div className="terms-list">{sections.map((section) => <article className="terms-section" key={section.title}><h2>{section.title}</h2>{section.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}{"note" in section && <p className="management-note"><strong>Management to complete:</strong> Cancellation notice periods, deposit percentages, rescheduling conditions and refund processing timelines.</p>}</article>)}</div>
-        <a className="text-link" href="mailto:info@splashKidsWaterpark.co.za?subject=Terms%20and%20Conditions%20enquiry">Contact management <ArrowUpRight size={16} /></a>
+        <a className="text-link" href="mailto:info@splashKidsWaterpark.co.za?subject=Terms%20and%20Conditions%20enquiry">Ask management a question <ArrowUpRight size={16} /></a>
       </section>
     </main><SiteFooter /></div>
   );

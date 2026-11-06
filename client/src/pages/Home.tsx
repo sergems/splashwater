@@ -8,15 +8,15 @@ const picnicImage = "/manus-storage/async-images/odrhd4F0rIXnodBwn1pSYD/image-2.
 const mapsUrl = "https://www.google.com/maps/search/?api=1&query=Block+C%2C+eMondlo%2FVryheid+Road%2C+eMondlo%2C+3105%2C+KwaZulu-Natal%2C+South+Africa";
 
 const activities = [
-  { title: "Swimming pools", text: "Cool down, splash around and enjoy the water.", Icon: Waves, color: "aqua" },
-  { title: "Water slides", text: "Add a little excitement to your day with our water slides.", Icon: Wind, color: "yellow" },
-  { title: "Trampolines", text: "Bounce, jump and let that happy energy fly.", Icon: Sparkles, color: "pink" },
-  { title: "Jumping castles", text: "Endless entertainment for little adventurers.", Icon: Castle, color: "orange" },
-  { title: "Jungle gyms", text: "Climb, explore and play outdoors.", Icon: Trees, color: "green" },
-  { title: "Kids’ play area", text: "A space dedicated to fun and outdoor play.", Icon: Baby, color: "blue" },
-  { title: "Beautiful gardens", text: "Enjoy the fresh air and lovely outdoor surroundings.", Icon: Flower2, color: "green" },
-  { title: "Picnic & braai areas", text: "Gather your crew for lunch, snacks and a traditional braai.", Icon: ForkKnife, color: "orange" },
-  { title: "Lapas & benches", text: "Take a breather; lapas are available with advance booking.", Icon: TentTree, color: "yellow" },
+  { title: "Swimming pools", text: "Cool off, splash together and make the most of the water.", Icon: Waves, color: "aqua" },
+  { title: "Water slides", text: "Get ready for a whoosh, a splash and another turn.", Icon: Wind, color: "yellow" },
+  { title: "Trampolines", text: "Bounce high, laugh loud and let the fun take over.", Icon: Sparkles, color: "pink" },
+  { title: "Jumping castles", text: "Little adventurers can jump, tumble and play.", Icon: Castle, color: "orange" },
+  { title: "Jungle gyms", text: "Climb, explore and invent a new adventure outdoors.", Icon: Trees, color: "green" },
+  { title: "Kids’ play area", text: "A special spot for little ones to play and explore.", Icon: Baby, color: "blue" },
+  { title: "Beautiful gardens", text: "Take a breath, enjoy the greenery and spend time together.", Icon: Flower2, color: "green" },
+  { title: "Picnic & braai areas", text: "Bring your favourite food and share a relaxed meal outdoors.", Icon: ForkKnife, color: "orange" },
+  { title: "Lapas & benches", text: "Find a shady place to rest; lapas can be booked in advance.", Icon: TentTree, color: "yellow" },
 ];
 
 const events = ["Children’s birthday parties", "Family celebrations", "School & community outings", "Church & youth group visits", "Friends’ get-togethers", "Group day visits"];
@@ -36,7 +36,7 @@ export default function Home() {
               <span className="eyebrow"><span className="eyebrow-dot" /> eMondlo’s happy place to play</span>
               <h1>BIG SPLASHES.<br /><span>BIG SMILES.</span></h1>
               <p className="hero-tagline">UNFORGETTABLE FAMILY FUN!</p>
-              <p className="hero-description">Make a day of slides, splashes, trampoline jumps and garden-side family time at Splash Kids Waterpark.</p>
+              <p className="hero-description">Make a day of it with slides, splashes, trampoline time and a little downtime together in the garden.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#attractions">Explore attractions <ArrowRight size={18} /></a>
                 <a className="button button-soft" href="/visit">Plan your visit <ArrowUpRight size={17} /></a>
@@ -65,8 +65,8 @@ export default function Home() {
             <Reveal className="experience-copy">
               <span className="eyebrow eyebrow-blue">More than just a waterpark</span>
               <h2>A family day<br /><span>with extra splash.</span></h2>
-              <p>At Splash Kids Waterpark, the best memories are made when families spend time together. Find water attractions, outdoor entertainment and relaxing picnic spaces in one lively place.</p>
-              <p>Whether the children are racing for another slide, bouncing on trampolines or exploring the play areas, there is something to keep everyone smiling.</p>
+              <p>Bring your favourite people together for a day of water fun, outdoor play and time to unwind. Splash Kids Waterpark has plenty of ways to make family memories in eMondlo.</p>
+              <p>Race to the slides, bounce on the trampolines, explore the play areas or slow things down with a picnic. There’s room for everyone to enjoy the day their own way.</p>
               <p className="script-line">Come for the fun. Stay for the memories. Leave with a smile!</p>
               <a href="#attractions" className="text-link">See what’s waiting <ArrowRight size={17} /></a>
             </Reveal>
@@ -81,7 +81,7 @@ export default function Home() {
             <Reveal className="section-intro centered-intro">
               <span className="eyebrow eyebrow-blue">Something exciting around every corner</span>
               <h2>Pick your kind<br />of <span>play.</span></h2>
-              <p>Explore the water fun, adventure zone and family-friendly spots waiting at the park.</p>
+              <p>From water play to outdoor adventures and picnic breaks, there’s a little something for every kind of day.</p>
             </Reveal>
             <div className="activity-grid">
               {activities.map(({ title, text, Icon, color }, index) => (
@@ -103,7 +103,7 @@ export default function Home() {
             <Reveal className="picnic-copy" delay={0.1}>
               <span className="eyebrow eyebrow-blue">Bring your own food. Bring your family. Enjoy!</span>
               <h2>Pack the snacks.<br /><span>Bring your crew.</span></h2>
-              <p>Make your visit your own with a picnic in the garden or a relaxed meal together. Pack your favourite treats, gather your loved ones and make a day of it.</p>
+              <p>Bring the snacks you love, find a spot to settle in and enjoy a meal together between all the splashing and playing.</p>
               <ul className="check-list">
                 <li><span>✓</span> Bring your own food and snacks</li>
                 <li><span>✓</span> Coolerboxes welcome at no extra charge</li>
@@ -120,7 +120,7 @@ export default function Home() {
             <Reveal className="party-copy">
               <span className="eyebrow eyebrow-light"><PartyPopper size={16} /> Gather your favourite people</span>
               <h2>Make your next<br /><span>celebration a splash!</span></h2>
-              <p>Birthdays, family get-togethers or a group outing—bring everyone together for a day outside.</p>
+              <p>Planning a birthday, family get-together or group outing? Bring everyone together for a day of fresh air and fun.</p>
               <div className="event-pills">{events.map((event) => <span key={event}>{event}</span>)}</div>
               <p className="party-small">Advance booking is recommended for lapas and organised group visits. Packages and availability must be confirmed with management.</p>
               <a className="button button-white" href="/visit#enquiry">Enquire about a party <ArrowUpRight size={17} /></a>
@@ -136,7 +136,7 @@ export default function Home() {
             <Reveal className="section-intro gallery-intro">
               <span className="eyebrow eyebrow-blue">See the fun. Feel the excitement.</span>
               <h2>Little peeks of<br /><span>big-time fun.</span></h2>
-              <p>We’re getting the photo and video gallery ready. Real photos and a short park tour will be added once the park’s own media is available.</p>
+              <p>We’re looking forward to sharing a closer look at the park. Real photos and a short tour will appear here when the park’s own pictures and video are ready.</p>
               <span className="coming-pill"><Clock3 size={15} /> Park photos &amp; video coming soon</span>
             </Reveal>
             <Reveal className="gallery-preview" delay={0.1}>
@@ -146,7 +146,7 @@ export default function Home() {
                   <span className={`gallery-category gallery-tone-${i % 4}`} key={item}><Sparkles size={16} /> {item}</span>
                 ))}
               </div>
-              <div className="gallery-preview-foot"><CircleHelp size={18} /><span>These are the moments we can’t wait to show you. Check back for actual park photos and a video tour.</span></div>
+              <div className="gallery-preview-foot"><CircleHelp size={18} /><span>We can’t wait to share the real-life splashes and smiles. Please check back for park photos and a video tour.</span></div>
             </Reveal>
           </section>
 
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="final-cta-copy">
               <span className="eyebrow eyebrow-light">Your next family adventure starts here</span>
               <h2>Ready for a<br /><span>day full of smiles?</span></h2>
-              <p>Bring the children, invite your friends and make some happy outdoor memories. We can’t wait to welcome you!</p>
+              <p>Bring the kids, invite your friends and make a day of happy outdoor memories. We’d love to help you plan your visit.</p>
               <div className="hero-actions">
                 <a className="button button-yellow" href="/visit">Plan your visit <ArrowRight size={18} /></a>
                 <a className="button button-outline-light" href="tel:+27648200293">Call +27 64 820 0293</a>

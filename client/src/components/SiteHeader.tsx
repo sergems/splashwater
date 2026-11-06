@@ -23,8 +23,8 @@ export default function SiteHeader() {
     <>
       <a className="skip-link" href="#main-content">Skip to content</a>
       <div className="top-ribbon">
-        <span>eMondlo’s happiest place to make a splash</span>
-        <a href="tel:+27648200293">Call us: +27 64 820 0293</a>
+        <span>Big splashes and family fun in eMondlo</span>
+        <a href="tel:+27648200293">Call the team: +27 64 820 0293</a>
       </div>
       <header className="site-header">
         <div className="nav-wrap">
@@ -36,9 +36,9 @@ export default function SiteHeader() {
           </button>
           <nav className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
             <Link href="/" onClick={close} className={onHome ? "nav-current" : ""}>Home</Link>
-            <a href="/#attractions" onClick={close}>Attractions</a>
-            <Link href="/visit" onClick={close}>Plan your visit</Link>
-            <a href="/visit#enquiry" onClick={close} className="nav-cta">Let’s plan a day <ArrowUpRight size={15} /></a>
+            <a href="/#attractions" onClick={close}>Things to do</a>
+            <Link href="/visit" onClick={close}>Plan your day</Link>
+            <a href="/visit#enquiry" onClick={close} className="nav-cta">Ask us about a visit <ArrowUpRight size={15} /></a>
           </nav>
         </div>
       </header>
