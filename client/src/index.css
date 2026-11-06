@@ -82,7 +82,7 @@ a { color: inherit; }
   body { @apply bg-background text-foreground; }
 }
 
-h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS", sans-serif; }
+h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Nunito", "Trebuchet MS", sans-serif; }
 .site-shell { overflow: hidden; }
 .top-ribbon { min-height: 35px; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; gap: 2.5rem; padding: 6px 20px; font-size: 12px; font-weight: 800; letter-spacing: .035em; }
 .top-ribbon a { color: var(--yellow); text-decoration: none; }
@@ -130,7 +130,7 @@ h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS"
 .orbit-two { width: 74%; aspect-ratio: 1; border-color: rgba(255,138,39,.29); }
 .hero-sticker { position: absolute; z-index: 3; right: -2%; bottom: 9%; width: 126px; height: 126px; border-radius: 50%; background: var(--yellow); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--navy); transform: rotate(11deg); border: 5px solid #fff; box-shadow: 0 8px 20px rgba(38,54,96,.12); line-height: 1; text-align: center; }
 .hero-sticker span { font-size: 12px; font-weight: 900; letter-spacing: .1em; }
-.hero-sticker strong { margin: 4px 0; font-family: "Fredoka", sans-serif; font-size: 20px; }
+.hero-sticker strong { margin: 4px 0; font-family: "Nunito", sans-serif; font-size: 20px; }
 .hero-sticker svg { color: var(--red); }
 .bubble { position: absolute; z-index: 4; display: block; width: 22px; height: 22px; border-radius: 50%; border: 2px solid rgba(255,255,255,.95); background: #47d3f0; box-shadow: 0 2px 9px #76e4f2; animation: bob 4.3s ease-in-out infinite; }
 .bubble-a { right: 13%; top: 18%; width: 17px; height: 17px; animation-delay: -.7s; }
@@ -150,7 +150,7 @@ h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS"
 .experience-copy h2, .section-intro h2, .picnic-copy h2, .page-hero h1, .before-copy h2, .location-copy h2, .contact-heading h2, .policy-hero h1 { margin: 14px 0 18px; color: var(--navy); font-size: clamp(2.65rem, 5.2vw, 4.45rem); line-height: .98; letter-spacing: -.045em; }
 .experience-copy h2 span, .section-intro h2 span, .picnic-copy h2 span, .before-copy h2 span, .location-copy h2 span, .contact-heading h2 span, .policy-hero h1 span { color: var(--blue); }
 .experience-copy > p:not(.script-line) { max-width: 540px; color: #5b6881; font-size: 15px; line-height: 1.8; font-weight: 600; }
-.script-line { margin: 19px 0 12px; color: var(--red); font-family: "Fredoka", sans-serif; font-size: 22px; font-weight: 600; }
+.script-line { margin: 19px 0 12px; color: var(--red); font-family: "Nunito", sans-serif; font-size: 22px; font-weight: 600; }
 .text-link { display: inline-flex; align-items: center; gap: 7px; color: var(--blue); font-size: 13px; font-weight: 900; text-decoration: none; border-bottom: 2px solid #bfe9f3; padding: 4px 0; }
 .text-link:hover { border-color: var(--blue); }
 .experience-stamp { position: relative; display: flex; align-items: center; justify-content: center; min-height: 390px; background: radial-gradient(circle at center, #eaffff 0, #f1fcff 52%, transparent 53%); }
@@ -173,7 +173,7 @@ h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS"
 .activity-card:hover { transform: translateY(-5px) rotate(-.4deg); box-shadow: 0 15px 28px rgba(17,57,106,.09); }
 .activity-icon { display: inline-flex; width: 46px; height: 46px; align-items: center; justify-content: center; border-radius: 16px; }
 .card-aqua .activity-icon { color: #0474ab; background: #d8f8ff; }.card-yellow .activity-icon { color: #976b00; background: #fff5c4; }.card-pink .activity-icon { color: #d51a58; background: #ffe3ed; }.card-orange .activity-icon { color: #be550c; background: #ffe9d7; }.card-green .activity-icon { color: #158742; background: #ddfae4; }.card-blue .activity-icon { color: var(--blue); background: #e3edff; }
-.activity-number { position: absolute; top: 23px; right: 22px; color: #d7e1ef; font-family: "Fredoka", sans-serif; font-size: 15px; font-weight: 700; }
+.activity-number { position: absolute; top: 23px; right: 22px; color: #d7e1ef; font-family: "Nunito", sans-serif; font-size: 15px; font-weight: 700; }
 .activity-card h3 { margin: 14px 0 5px; color: var(--navy); font-size: 20px; letter-spacing: -.02em; }
 .activity-card p { margin: 0; max-width: 310px; color: #6c7891; font-size: 13px; line-height: 1.55; font-weight: 600; }
 .safety-note { max-width: 1190px; margin: 24px auto 0; display: flex; align-items: center; gap: 9px; color: #526884; font-size: 12px; font-weight: 800; }
@@ -204,8 +204,8 @@ h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS"
 .party-copy .button { margin-top: 12px; }
 .party-doodle { min-height: 330px; position: relative; display: flex; align-items: center; justify-content: center; }
 .party-burst { position: relative; width: 220px; height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--navy); background: var(--yellow); clip-path: polygon(50% 0%,60% 17%,78% 7%,79% 27%,99% 27%,88% 45%,100% 59%,81% 66%,88% 86%,67% 84%,58% 100%,46% 84%,28% 96%,27% 76%,7% 76%,16% 58%,0% 44%,20% 36%,13% 17%,34% 21%); transform: rotate(-8deg); filter: drop-shadow(0 18px 14px rgba(2,35,110,.18)); }
-.party-burst span { margin-top: 6px; font-family: "Fredoka", sans-serif; font-size: 38px; font-weight: 700; }
-.party-bubble { position: absolute; right: 7%; bottom: 3%; display: flex; width: 116px; height: 116px; border-radius: 50%; align-items: center; justify-content: center; flex-direction: column; background: #ff4671; color: #fff; font-family: "Fredoka", sans-serif; font-size: 16px; text-align: center; line-height: 1.03; transform: rotate(9deg); border: 5px solid rgba(255,255,255,.86); }
+.party-burst span { margin-top: 6px; font-family: "Nunito", sans-serif; font-size: 38px; font-weight: 700; }
+.party-bubble { position: absolute; right: 7%; bottom: 3%; display: flex; width: 116px; height: 116px; border-radius: 50%; align-items: center; justify-content: center; flex-direction: column; background: #ff4671; color: #fff; font-family: "Nunito", sans-serif; font-size: 16px; text-align: center; line-height: 1.03; transform: rotate(9deg); border: 5px solid rgba(255,255,255,.86); }
 .party-bubble b { color: #ffe456; }
 .party-star { position: absolute; color: #a5edff; }.star-one { top: 12%; left: 8%; font-size: 34px; }.star-two { bottom: 18%; left: 14%; font-size: 41px; color: #ff7792; }
 
@@ -229,7 +229,7 @@ h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS"
 .cta-splash { position: absolute; right: 34%; top: 21%; color: rgba(255,255,255,.07); transform: rotate(-25deg); }
 .cta-contact-card { z-index: 1; padding: 24px; border-radius: 23px; background: #fff; color: var(--navy); box-shadow: 0 18px 38px rgba(0,0,0,.16); }
 .cta-card-icon { display: flex; width: 43px; height: 43px; align-items: center; justify-content: center; margin-bottom: 15px; background: #e1f9ff; color: var(--blue); border-radius: 14px; }
-.cta-contact-card strong { font-family: "Fredoka", sans-serif; font-size: 21px; }.cta-contact-card p { color: #61708a; font-size: 12px; line-height: 1.7; }
+.cta-contact-card strong { font-family: "Nunito", sans-serif; font-size: 21px; }.cta-contact-card p { color: #61708a; font-size: 12px; line-height: 1.7; }
 .cta-contact-card > a { display: inline-flex; gap: 5px; align-items: center; color: var(--blue); font-size: 12px; font-weight: 900; text-decoration: none; }
 .cta-contact-card .small-note { margin-top: 13px; margin-bottom: 0; }
 
@@ -237,7 +237,7 @@ h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS"
 .footer-wave { position: absolute; width: 115%; height: 62px; left: -8%; top: -42px; background: var(--paper); border-radius: 0 0 50% 50%; }
 .footer-main { display: grid; grid-template-columns: 1.3fr 1fr .8fr; gap: 48px; padding: 18px 0 38px; }
 .footer-mark { display: flex; align-items: center; gap: 8px; color: var(--blue); font-size: 21px; font-weight: 700; }.footer-mark svg { color: var(--aqua); }.footer-mark b { color: var(--red); }
-.footer-brand > p { margin: 14px 0; font-family: "Fredoka", sans-serif; color: var(--navy); font-size: 19px; line-height: 1.24; }
+.footer-brand > p { margin: 14px 0; font-family: "Nunito", sans-serif; color: var(--navy); font-size: 19px; line-height: 1.24; }
 .footer-map { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; color: var(--blue); font-size: 12px; font-weight: 900; text-decoration: none; }.footer-map span { color: #718099; font-size: 12px; }
 .footer-main h3 { margin: 1px 0 14px; color: var(--navy); font-size: 18px; }
 .footer-details p { margin: 0 0 13px; color: #61708a; font-size: 12px; line-height: 1.65; font-weight: 700; }
@@ -262,7 +262,7 @@ h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS"
 .packages-panel h2 { margin: 7px 0 8px; color: var(--navy); font-size: 28px; }.packages-panel p { max-width: 420px; margin: 0; color: #63728b; font-size: 12px; line-height: 1.7; font-weight: 700; }
 .package-tags { display: flex; flex-wrap: wrap; gap: 9px; }.package-tags span { padding: 10px 12px; border: 1px solid #dce9f3; border-radius: 99px; background: #f8fcff; color: #344867; font-size: 12px; font-weight: 900; }
 .before-visit-section { background: #f4fbff; padding: 65px max(30px, calc((100vw - 1120px) / 2)); }.before-copy h2 { font-size: 42px; margin-bottom: 8px; }.before-copy > p { color: #68778e; font-size: 13px; font-weight: 700; }
-.before-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 30px; margin-top: 28px; }.before-list > div { display: flex; gap: 14px; align-items: flex-start; padding: 17px 0; border-bottom: 1px solid #dceaf2; }.before-list span { display: flex; flex: 0 0 32px; height: 32px; align-items: center; justify-content: center; border-radius: 11px; background: #fff2c2; color: #936c00; font-family: "Fredoka", sans-serif; font-size: 13px; font-weight: 700; }.before-list > div:nth-child(2) span { background: #d9f9ff; color: #04779a; }.before-list > div:nth-child(3) span { background: #dff9e5; color: #168243; }.before-list > div:nth-child(4) span { background: #ffe3ec; color: #ca1649; }.before-list p { margin: 2px 0 0; color: #41526e; font-size: 12px; line-height: 1.65; font-weight: 800; }
+.before-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 30px; margin-top: 28px; }.before-list > div { display: flex; gap: 14px; align-items: flex-start; padding: 17px 0; border-bottom: 1px solid #dceaf2; }.before-list span { display: flex; flex: 0 0 32px; height: 32px; align-items: center; justify-content: center; border-radius: 11px; background: #fff2c2; color: #936c00; font-family: "Nunito", sans-serif; font-size: 13px; font-weight: 700; }.before-list > div:nth-child(2) span { background: #d9f9ff; color: #04779a; }.before-list > div:nth-child(3) span { background: #dff9e5; color: #168243; }.before-list > div:nth-child(4) span { background: #ffe3ec; color: #ca1649; }.before-list p { margin: 2px 0 0; color: #41526e; font-size: 12px; line-height: 1.65; font-weight: 800; }
 .visit-safety { display: flex; align-items: center; gap: 10px; margin-top: 24px; padding: 14px 16px; color: #326646; background: #e6f9eb; border-radius: 14px; font-size: 12px; font-weight: 900; }.visit-safety svg { flex: 0 0 auto; }
 .location-section { padding: 68px 30px; }.location-card { max-width: 1050px; margin: auto; display: grid; grid-template-columns: .82fr 1.18fr; overflow: hidden; border-radius: 27px; background: #fff7d5; }
 .location-pin-art { position: relative; min-height: 320px; overflow: hidden; display: flex; align-items: center; justify-content: center; color: var(--blue); background: radial-gradient(circle at center, #d7f9ff 0 30%, transparent 31%), linear-gradient(145deg, #20bddd, #d9f9ff); }.location-pin-art::before, .location-pin-art::after { content: ""; position: absolute; width: 220px; height: 220px; border-radius: 50%; border: 1px solid rgba(20,102,223,.19); }.location-pin-art::after { width: 300px; height: 300px; }.location-pin-art svg { position: relative; z-index: 1; width: 72px; height: 72px; fill: #ff4567; color: #ff4567; stroke: #fff; stroke-width: 1.4; filter: drop-shadow(0 8px 5px rgba(23,74,120,.18)); }.location-pin-art span { position: absolute; z-index: 2; margin-top: -12px; color: #fff; font-size: 12px; font-weight: 1000; }
@@ -314,3 +314,89 @@ h1, h2, h3, .brand-lockup, .footer-mark { font-family: "Fredoka", "Trebuchet MS"
 
 .skip-link { position: fixed; z-index: 100; top: 8px; left: 12px; transform: translateY(-160%); padding: 12px 16px; border-radius: 999px; color: #fff; background: var(--navy); box-shadow: 0 4px 14px rgba(4,24,65,.22); font-size: 13px; font-weight: 900; text-decoration: none; transition: transform .18s ease; }
 .skip-link:focus { transform: translateY(0); }
+
+
+/* Refined playfulness: keep the splash-park energy, lose the sticker-bomb look. */
+h1, h2, h3, .footer-mark, .footer-brand > p, .activity-number, .script-line, .stamp-card, .before-list > div > span, .cta-contact-card > strong { font-family: "Nunito", "Trebuchet MS", sans-serif; }
+h1, h2, h3 { font-weight: 800; }
+.hero-copy h1 { font-weight: 900; letter-spacing: -.04em; }
+.experience-copy h2, .section-intro h2, .picnic-copy h2, .page-hero h1, .before-copy h2, .location-copy h2, .contact-heading h2, .policy-hero h1, .party-copy h2, .final-cta-copy h2 { letter-spacing: -.025em; }
+.script-line { color: var(--blue); font-style: italic; font-weight: 800; }
+
+.main-nav .nav-cta { border-radius: 13px; box-shadow: 0 3px 10px rgba(9, 54, 124, .12); }
+.button { border-radius: 13px; }
+.button:hover { transform: translateY(-1px); }
+.button-primary, .button-primary:hover { box-shadow: 0 5px 13px rgba(20,102,223,.2); }
+.button-soft, .button-secondary, .button-white, .button-yellow, .button-whatsapp { box-shadow: 0 5px 13px rgba(20,48,86,.1); }
+.quick-strip { border-radius: 20px; box-shadow: 0 8px 24px rgba(25,57,107,.06); }
+
+.hero-art { filter: drop-shadow(0 14px 24px rgba(14,99,146,.09)); }
+.hero-art img { border-radius: 26px; }
+.hero-orbit { border: 0; }
+.hero-sticker { right: 1%; bottom: 8%; width: auto; height: auto; min-width: 155px; padding: 13px 16px; align-items: flex-start; gap: 3px; border: 0; border-left: 4px solid var(--yellow); border-radius: 14px; background: rgba(255,255,255,.97); color: var(--navy); box-shadow: 0 10px 26px rgba(18,42,82,.12); line-height: 1.2; text-align: left; transform: none; }
+.hero-sticker span { color: #60718a; font-size: 12px; letter-spacing: .08em; }
+.hero-sticker strong { margin: 0; color: var(--navy); font-family: "Nunito", sans-serif; font-size: 16px; font-weight: 800; }
+.hero-sticker svg { display: none; }
+.bubble { opacity: .56; border-width: 1px; box-shadow: none; animation-duration: 7s; }
+.bubble-a { background: #45cde5; }.bubble-b { background: #8adce8; }.bubble-c { background: #ffd978; }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+
+.experience-stamp { background: none; }
+.stamp-card { width: min(88%, 280px); height: auto; min-height: 164px; padding: 22px 24px; align-items: flex-start; border: 1px solid rgba(17,53,93,.08); border-left: 4px solid var(--yellow); border-radius: 20px; box-shadow: 0 12px 27px rgba(23,48,104,.08); text-align: left; }
+.stamp-yellow { z-index: 2; margin-right: 12%; background: #fff7dd; color: var(--navy); transform: none; }
+.stamp-blue { position: absolute; right: 0; bottom: 12%; border-left-color: var(--aqua); background: #e6f9fc; color: var(--navy); transform: none; }
+.stamp-card strong { margin: 9px 0 6px; line-height: 1.08; }
+.confetti { display: none; }
+
+.activity-card { border-radius: 17px; box-shadow: 0 5px 16px rgba(17,57,106,.04); }
+.activity-card:hover { transform: translateY(-2px); box-shadow: 0 9px 21px rgba(17,57,106,.08); }
+.activity-icon { border-radius: 12px; }
+.picnic-frame { border-radius: 24px; box-shadow: 0 14px 28px rgba(18,68,112,.09); transform: none; }
+.picnic-frame img { border-radius: 24px; }
+.picnic-caption { right: 12px; bottom: 12px; padding: 11px 14px; border: 1px solid #e5ebf2; border-radius: 12px; background: rgba(255,255,255,.96); color: var(--navy); box-shadow: 0 5px 14px rgba(20,48,86,.08); transform: none; }
+
+.party-band { background: linear-gradient(118deg, #155fac, #087eae 60%, #1097ae); }
+.party-band::before { opacity: .45; box-shadow: none; }
+.event-pills span { border-radius: 10px; background: rgba(255,255,255,.1); }
+.party-doodle { min-height: 290px; }
+.party-feature-card { width: min(100%, 350px); min-height: 225px; padding: 27px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px; border: 1px solid rgba(255,255,255,.72); border-radius: 20px; background: rgba(255,255,255,.97); color: var(--navy); box-shadow: 0 14px 30px rgba(3,37,87,.13); }
+.party-feature-icon { display: flex; width: 42px; height: 42px; align-items: center; justify-content: center; border-radius: 12px; background: #fff4d2; color: #a06e00; }
+.party-feature-label { color: #60718a; font-size: 12px; font-weight: 900; letter-spacing: .08em; }
+.party-feature-card strong { font-size: 25px; line-height: 1.15; font-weight: 800; }
+.party-feature-card p { margin: 0; color: #62728b; font-size: 13px; line-height: 1.5; }
+
+.gallery-category { border-radius: 13px; }
+.gallery-preview { border-radius: 20px; box-shadow: 0 8px 22px rgba(12,71,116,.045); }
+.coming-pill { border-radius: 12px; }
+.cta-contact-card { border-radius: 18px; box-shadow: 0 12px 28px rgba(0,0,0,.12); }
+.cta-card-icon { border-radius: 12px; }
+.footer-wave { display: none; }
+.location-card { border-radius: 20px; }
+.location-pin-art { background: linear-gradient(145deg, #126bb2, #13a2bb); }
+.location-pin-art::before, .location-pin-art::after { border-color: rgba(255,255,255,.16); }
+.location-pin-art svg { fill: none; color: #fff; stroke: currentColor; filter: none; }
+.location-pin-art span { display: none; }
+.fact-icon { border-radius: 12px; }
+.package-tags span { border-radius: 10px; }
+
+@media (max-width: 640px) {
+  .hero-sticker { right: 0; bottom: 0; width: auto; height: auto; min-width: 138px; max-width: 175px; padding: 10px 12px; border: 0; border-left: 4px solid var(--yellow); border-radius: 12px; }
+  .stamp-card { width: min(86%, 250px); min-height: 150px; padding: 18px 20px; }
+  .stamp-blue { width: min(82%, 250px); bottom: 10%; }
+  .party-doodle { min-height: 250px; }
+  .party-feature-card { min-height: 205px; padding: 22px; }
+  .party-feature-card strong { font-size: 23px; }
+}
+
+.hero-section::before { width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,220,93,.22) 0%, rgba(255,220,93,.1) 43%, rgba(255,220,93,0) 72%); opacity: 1; }
+.hero-copy h1 { font-weight: 800; letter-spacing: -.035em; }
+.hero-tagline { font-weight: 800; letter-spacing: .02em; }
+@media (max-width: 640px) {
+  .hero-section::before { width: 230px; height: 230px; right: -10%; top: 32%; }
+}
+
+.hero-copy h1 { font-size: clamp(3.45rem, 6.2vw, 5.5rem); font-weight: 700; }
+.hero-tagline { color: var(--blue); font-weight: 700; letter-spacing: .015em; }
+@media (max-width: 640px) {
+  .hero-copy h1 { font-size: clamp(3.2rem, 14vw, 5rem); }
+}

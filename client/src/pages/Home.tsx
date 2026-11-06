@@ -3,8 +3,8 @@ import { ArrowDown, ArrowRight, ArrowUpRight, Baby, Castle, CircleHelp, Clock3, 
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
-const heroImage = "/manus-storage/async-images/odrhd4F0rIXnodBwn1pSYD/image-1.webp";
-const picnicImage = "/manus-storage/async-images/odrhd4F0rIXnodBwn1pSYD/image-2.webp";
+const heroImage = "/manus-storage/async-images/eyWpaYSGBVRNlv6VgmHSrT/image-1.webp";
+const picnicImage = "/manus-storage/async-images/esvWjkq1lHdNGQ0cf8m5Am/image-1.webp";
 const mapsUrl = "https://www.google.com/maps/search/?api=1&query=Block+C%2C+eMondlo%2FVryheid+Road%2C+eMondlo%2C+3105%2C+KwaZulu-Natal%2C+South+Africa";
 
 const activities = [
@@ -46,9 +46,9 @@ export default function Home() {
             <div className="hero-art-wrap">
               <div className="hero-orbit orbit-one" aria-hidden="true" /><div className="hero-orbit orbit-two" aria-hidden="true" />
               <motion.div className="hero-art" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.75, ease: "easeOut" }}>
-                <img src={heroImage} alt="Illustration of children happily splashing in a colorful water-play area" fetchPriority="high" />
+                <img src={heroImage} alt="Illustrative concept image of a family at an outdoor splash park; it does not depict the actual venue." fetchPriority="high" />
               </motion.div>
-              <div className="hero-sticker"><span>MAKE</span><strong>A DAY<br />OF IT!</strong><Sparkles size={17} /></div>
+              <div className="hero-sticker"><span>ILLUSTRATIVE CONCEPT</span><strong>Family fun outdoors.</strong></div>
               <span className="bubble bubble-a" aria-hidden="true" /><span className="bubble bubble-b" aria-hidden="true" /><span className="bubble bubble-c" aria-hidden="true" />
             </div>
             <a href="#experience" className="scroll-cue" aria-label="Scroll to discover the splash experience"><ArrowDown size={18} /><span>Let’s explore</span></a>
@@ -97,8 +97,8 @@ export default function Home() {
 
           <section className="section picnic-section" id="picnic">
             <Reveal className="picnic-visual">
-              <div className="picnic-frame"><img src={picnicImage} alt="Illustration of a family enjoying a picnic in a leafy garden beside the waterpark" loading="lazy" /></div>
-              <span className="picnic-caption"><Flower2 size={16} /> YOUR DAY, YOUR WAY</span>
+              <div className="picnic-frame"><img src={picnicImage} alt="Illustrative concept of a family picnic in a garden near a splash park; not a photograph of the venue." loading="lazy" /></div>
+              <span className="picnic-caption"><Trees size={16} /> PICNIC-AREA CONCEPT</span>
             </Reveal>
             <Reveal className="picnic-copy" delay={0.1}>
               <span className="eyebrow eyebrow-blue">Bring your own food. Bring your family. Enjoy!</span>
@@ -126,9 +126,12 @@ export default function Home() {
               <a className="button button-white" href="/visit#enquiry">Enquire about a party <ArrowUpRight size={17} /></a>
             </Reveal>
             <Reveal className="party-doodle" delay={0.16}>
-              <div className="party-burst"><PartyPopper size={54} /><span>YAY!</span></div>
-              <div className="party-bubble">GOOD<br />TIMES<br /><b>AHEAD</b></div>
-              <span className="party-star star-one">✦</span><span className="party-star star-two">✳</span>
+              <div className="party-feature-card">
+                <span className="party-feature-icon"><PartyPopper size={23} /></span>
+                <span className="party-feature-label">GOOD TIMES, TOGETHER</span>
+                <strong>Make it a day to remember.</strong>
+                <p>Birthdays · family days · group outings</p>
+              </div>
             </Reveal>
           </section>
 
