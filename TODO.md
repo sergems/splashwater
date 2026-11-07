@@ -5,6 +5,10 @@
 - [x] Provide a home page with the headline “BIG SPLASHES. BIG SMILES. UNFORGETTABLE FAMILY FUN!”, prominent branding, the supplied overview copy, family-friendly visuals, and clear calls to view attractions, contact the park and plan a visit.
 - [x] Keep the site responsive and accessible: readable parent-focused navigation, keyboard support including skip-to-content and Escape-to-close mobile navigation, visible focus states, useful alt text, and reduced-motion consideration. Add playful animation without compromising these needs.
 
+## Reference-inspired visual refinement
+- [x] Take look-and-feel inspiration from https://zimihwonderco.co.za/ and update Splash Kids to feel more polished and modern, with a calmer family-leisure atmosphere and less overtly kiddie styling. Keep the Splash Kids identity and waterpark content; do not copy the reference site's text, logo or images.
+- [x] Preserve the user's minimum font-size requirement of 12px across the entire site, including body and footer text.
+
 ## Attractions, food, celebrations and gallery
 - [x] Present swimming pools, water slides, trampolines, jumping castles, jungle gyms, kids’ play area, gardens, picnic and braai areas, benches, and lapas available by advance booking.
 - [x] Explain that visitors may bring their own food and snacks; coolerboxes are welcome at no additional charge; braai facilities, picnic spaces and gardens are available; applicable braai rules, permitted equipment and food safety requirements come from management.

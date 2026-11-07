@@ -33,13 +33,13 @@ export default function Home() {
         <main id="main-content" tabIndex={-1}>
           <section className="hero-section" id="home">
             <div className="hero-copy">
-              <span className="eyebrow"><span className="eyebrow-dot" /> eMondlo’s happy place to play</span>
-              <h1>BIG SPLASHES.<br /><span>BIG SMILES.</span></h1>
-              <p className="hero-tagline">UNFORGETTABLE FAMILY FUN!</p>
-              <p className="hero-description">Make a day of it with slides, splashes, trampoline time and a little downtime together in the garden.</p>
+              <span className="eyebrow"><span className="eyebrow-dot" /> A family waterpark in eMondlo</span>
+              <h1>Big splashes.<br /><span>Big smiles.</span></h1>
+              <p className="hero-tagline">Unforgettable family fun.</p>
+              <p className="hero-description">Cool off in the pools, explore the slides and play areas, then slow down for a picnic in the garden. A relaxed family day out, your way.</p>
               <div className="hero-actions">
-                <a className="button button-primary" href="#attractions">Explore attractions <ArrowRight size={18} /></a>
-                <a className="button button-soft" href="/visit">Plan your visit <ArrowUpRight size={17} /></a>
+                <a className="button button-primary" href="#attractions">Explore the park <ArrowRight size={18} /></a>
+                <a className="button button-soft" href="/visit">Plan a visit <ArrowUpRight size={17} /></a>
               </div>
               <div className="hero-note"><MapPin size={17} /><span>Block C, eMondlo / Vryheid Road</span></div>
             </div>
@@ -48,7 +48,7 @@ export default function Home() {
               <motion.div className="hero-art" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.75, ease: "easeOut" }}>
                 <img src={heroImage} alt="Illustrative concept image of a family at an outdoor splash park; it does not depict the actual venue." fetchPriority="high" />
               </motion.div>
-              <div className="hero-sticker"><span>ILLUSTRATIVE CONCEPT</span><strong>Family fun outdoors.</strong></div>
+              <div className="hero-sticker"><span>ILLUSTRATIVE CONCEPT</span><strong>Not a park photograph</strong></div>
               <span className="bubble bubble-a" aria-hidden="true" /><span className="bubble bubble-b" aria-hidden="true" /><span className="bubble bubble-c" aria-hidden="true" />
             </div>
             <a href="#experience" className="scroll-cue" aria-label="Scroll to discover the splash experience"><ArrowDown size={18} /><span>Let’s explore</span></a>
@@ -56,32 +56,32 @@ export default function Home() {
           </section>
 
           <section className="quick-strip" aria-label="Park highlights">
-            <div><Waves size={19} /><span>Cool off &amp; splash</span></div><i aria-hidden="true" />
-            <div><ForkKnife size={19} /><span>Bring your own picnic</span></div><i aria-hidden="true" />
-            <div><PartyPopper size={19} /><span>Celebrate together</span></div>
+            <div><Waves size={19} /><span>Pools &amp; slides</span></div><i aria-hidden="true" />
+            <div><ForkKnife size={19} /><span>Bring a picnic</span></div><i aria-hidden="true" />
+            <div><PartyPopper size={19} /><span>Gather together</span></div>
           </section>
 
           <section className="section experience-section" id="experience">
             <Reveal className="experience-copy">
-              <span className="eyebrow eyebrow-blue">More than just a waterpark</span>
-              <h2>A family day<br /><span>with extra splash.</span></h2>
+              <span className="eyebrow eyebrow-blue">A little of everything</span>
+              <h2>A family day<br /><span>at your own pace.</span></h2>
               <p>Bring your favourite people together for a day of water fun, outdoor play and time to unwind. Splash Kids Waterpark has plenty of ways to make family memories in eMondlo.</p>
               <p>Race to the slides, bounce on the trampolines, explore the play areas or slow things down with a picnic. There’s room for everyone to enjoy the day their own way.</p>
-              <p className="script-line">Come for the fun. Stay for the memories. Leave with a smile!</p>
+              <p className="script-line">Make time for the people who matter.</p>
               <a href="#attractions" className="text-link">See what’s waiting <ArrowRight size={17} /></a>
             </Reveal>
             <Reveal className="experience-stamp" delay={0.12}>
-              <div className="stamp-card stamp-yellow"><Sparkles size={26} /><strong>HAPPY<br />LITTLE<br />ADVENTURES</strong><span>ALL DAY LONG</span></div>
-              <div className="stamp-card stamp-blue"><Waves size={28} /><strong>MAKE A<br />BIG SPLASH</strong><span>FAMILY FUN IN eMONDLO</span></div>
+              <div className="stamp-card stamp-yellow"><Waves size={26} /><strong>Make a splash.</strong><span>POOL TIME, TOGETHER</span></div>
+              <div className="stamp-card stamp-blue"><TentTree size={28} /><strong>Take a pause.</strong><span>GARDEN &amp; PICNIC TIME</span></div>
               <span className="confetti confetti-one" /><span className="confetti confetti-two" />
             </Reveal>
           </section>
 
           <section className="section attractions-section" id="attractions">
             <Reveal className="section-intro centered-intro">
-              <span className="eyebrow eyebrow-blue">Something exciting around every corner</span>
-              <h2>Pick your kind<br />of <span>play.</span></h2>
-              <p>From water play to outdoor adventures and picnic breaks, there’s a little something for every kind of day.</p>
+              <span className="eyebrow eyebrow-blue">The park, at your pace</span>
+              <h2>Find your kind<br />of <span>day out.</span></h2>
+              <p>Spend the day in the water, head outdoors to play, or take a break in the garden. There’s space to enjoy it your way.</p>
             </Reveal>
             <div className="activity-grid">
               {activities.map(({ title, text, Icon, color }, index) => (
@@ -101,8 +101,8 @@ export default function Home() {
               <span className="picnic-caption"><Trees size={16} /> PICNIC-AREA CONCEPT</span>
             </Reveal>
             <Reveal className="picnic-copy" delay={0.1}>
-              <span className="eyebrow eyebrow-blue">Bring your own food. Bring your family. Enjoy!</span>
-              <h2>Pack the snacks.<br /><span>Bring your crew.</span></h2>
+              <span className="eyebrow eyebrow-blue">Picnic &amp; braai areas</span>
+              <h2>Take a pause.<br /><span>Stay for lunch.</span></h2>
               <p>Bring the snacks you love, find a spot to settle in and enjoy a meal together between all the splashing and playing.</p>
               <ul className="check-list">
                 <li><span>✓</span> Bring your own food and snacks</li>
@@ -118,8 +118,8 @@ export default function Home() {
           <section className="party-band" id="celebrate">
             <div className="party-sun" aria-hidden="true" />
             <Reveal className="party-copy">
-              <span className="eyebrow eyebrow-light"><PartyPopper size={16} /> Gather your favourite people</span>
-              <h2>Make your next<br /><span>celebration a splash!</span></h2>
+              <span className="eyebrow eyebrow-light"><PartyPopper size={16} /> Mark a special occasion</span>
+              <h2>Bring everyone<br /><span>together.</span></h2>
               <p>Planning a birthday, family get-together or group outing? Bring everyone together for a day of fresh air and fun.</p>
               <div className="event-pills">{events.map((event) => <span key={event}>{event}</span>)}</div>
               <p className="party-small">Advance booking is recommended for lapas and organised group visits. Packages and availability must be confirmed with management.</p>
@@ -137,8 +137,8 @@ export default function Home() {
 
           <section className="section gallery-section" id="gallery">
             <Reveal className="section-intro gallery-intro">
-              <span className="eyebrow eyebrow-blue">See the fun. Feel the excitement.</span>
-              <h2>Little peeks of<br /><span>big-time fun.</span></h2>
+              <span className="eyebrow eyebrow-blue">A closer look at Splash Kids</span>
+              <h2>The park in<br /><span>pictures.</span></h2>
               <p>We’re looking forward to sharing a closer look at the park. Real photos and a short tour will appear here when the park’s own pictures and video are ready.</p>
               <span className="coming-pill"><Clock3 size={15} /> Park photos &amp; video coming soon</span>
             </Reveal>
@@ -156,8 +156,8 @@ export default function Home() {
           <section className="final-cta" id="contact">
             <div className="cta-splash" aria-hidden="true"><Waves size={62} /></div>
             <div className="final-cta-copy">
-              <span className="eyebrow eyebrow-light">Your next family adventure starts here</span>
-              <h2>Ready for a<br /><span>day full of smiles?</span></h2>
+              <span className="eyebrow eyebrow-light">Make time for a family day out</span>
+              <h2>Plan a day<br /><span>in eMondlo.</span></h2>
               <p>Bring the kids, invite your friends and make a day of happy outdoor memories. We’d love to help you plan your visit.</p>
               <div className="hero-actions">
                 <a className="button button-yellow" href="/visit">Plan your visit <ArrowRight size={18} /></a>

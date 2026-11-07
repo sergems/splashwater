@@ -10,7 +10,7 @@ export default function SiteFooter() {
       <div className="footer-main">
         <div className="footer-brand">
           <div className="footer-mark"><Waves size={24} aria-hidden="true" /><span>SPLASH <b>KIDS</b></span></div>
-          <p>Big splashes. Big smiles.<br />Make a day of it together!</p>
+          <p>A family waterpark in eMondlo.<br />Make time to be together.</p>
           <a className="footer-map" href={mapsUrl} target="_blank" rel="noreferrer"><MapPin size={16} /> Search the address <span>(entrance pin to be confirmed)</span></a>
         </div>
         <div className="footer-details">
