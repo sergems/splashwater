@@ -9,6 +9,7 @@
 - [x] Center the Splash Kids logo in the desktop navigation menu and keep it centered in the mobile header, with the menu toggle and links remaining easy to use.
 - [x] Change “Enquire about a visit” to “Enquiry” and present it as a regular text link to the enquiry form, not as a button.
 - [x] Keep the desktop navigation items grouped close to the centered logo on both sides rather than spread across the full navigation bar.
+- [x] Center “Splash Kids Waterpark · eMondlo” and “Talk to our team · +27 64 820 0293” in the top ribbon on desktop and mobile, and capitalize the menu labels as “Home,” “The Park,” “Plan Your Visit,” and “Enquiry.”
 
 ## Reference-inspired visual refinement
 - [x] Take look-and-feel inspiration from https://zimihwonderco.co.za/ and update Splash Kids to feel more polished and modern, with a calmer family-leisure atmosphere and less overtly kiddie styling. Keep the Splash Kids identity and waterpark content; do not copy the reference site's text, logo or images.

@@ -886,3 +886,26 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.035em; }
   .main-nav a { width: 100%; min-height: 44px; padding: 13px 14px; border-radius: 12px; }
   .main-nav .nav-enquiry-link:hover { border-radius: 12px; background: #f6f4fa; text-decoration: none; }
 }
+
+
+/* Center the park identity and direct phone contact in the top ribbon. */
+.top-ribbon {
+  justify-content: center;
+  text-align: center;
+  gap: 22px;
+}
+.top-ribbon span,
+.top-ribbon a { text-align: center; }
+
+@media (max-width: 760px) {
+  .top-ribbon {
+    min-height: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 7px 12px;
+  }
+  .top-ribbon span { display: block; max-width: none; }
+  .top-ribbon a { white-space: normal; }
+}

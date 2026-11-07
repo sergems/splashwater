@@ -34,10 +34,10 @@ export default function SiteHeader() {
           <nav className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
             <div className="nav-group nav-group-left">
               <Link href="/" onClick={close} className={onHome ? "nav-current" : ""}>Home</Link>
-              <a href="/#attractions" onClick={close}>The park</a>
+              <a href="/#attractions" onClick={close}>The Park</a>
             </div>
             <div className="nav-group nav-group-right">
-              <Link href="/visit" onClick={close}>Plan your visit</Link>
+              <Link href="/visit" onClick={close}>Plan Your Visit</Link>
               <a href="/visit#enquiry" onClick={close} className="nav-enquiry-link">Enquiry</a>
             </div>
           </nav>
