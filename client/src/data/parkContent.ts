@@ -79,7 +79,7 @@ export const listedAttractions = [
   },
   {
     name: "Children’s play area",
-    description: "A children’s play space is included in the supplied activity list.",
+    description: "A children’s play space is included in the activity list.",
     icon: "child",
     photo: {
       src: "/images/activities/childrens-play-area.webp",
@@ -111,7 +111,7 @@ export const listedAttractions = [
       width: 1400,
       height: 932,
     },
-    restriction: "The supplied information allows visitors to bring food and coolerboxes at no extra charge. Safety note: use only designated braai spaces and follow staff fire-safety instructions.",
+    restriction: "The park information allows visitors to bring food and coolerboxes at no extra charge. Safety note: use only designated braai spaces and follow staff fire-safety instructions.",
   },
   {
     name: "Lapas & benches",
@@ -141,7 +141,7 @@ export const facilityPlanningNotes = [
   "Parking: budget R0–R50 per vehicle; spaces may be limited.",
   "Toilets, showers and changing rooms: plan to bring towels and spare clothes; do not rely on showers or changing facilities.",
   "Lockers and secure storage: no locker access is included in this planning information; keep valuables with you.",
-  "On-site food sales: no purchase is included in the budget. Bring meals and snacks; coolerboxes are welcome at no extra charge according to the supplied information.",
+  "On-site food sales: no purchase is included in the budget. Bring meals and snacks; coolerboxes are welcome at no extra charge according to the park information.",
   "Shade and parent seating: assume limited shaded seating and bring hats or sun protection.",
   "First aid and accessibility: do not rely on a dedicated first-aid service or step-free amenities; contact the team to plan around individual needs.",
 ] as const;
@@ -149,10 +149,10 @@ export const facilityPlanningNotes = [
 export const visitorPlanningNotes = [
   "Opening schedule — note: likely weekends and school/public holidays, 09:00–17:00; weekday opening is treated as by arrangement.",
   "Admission — rates: children R70–R120 (assuming ages 2–12), adults R80–R150, and under 2s R0–R50 per visit.",
-  "Payment — planning assumption: tickets are paid in person; carry cash and a bank card because the accepted methods are not included in the supplied payment information.",
+  "Payment — planning assumption: tickets are paid in person; carry cash and a bank card because the accepted methods are not included in the payment information.",
   "Walk-ins and capacity — note: individual walk-ins may be available on open days; busy dates can fill up, so request groups and lapas 3–7 days ahead.",
-  "Parking — budget range R0–R50 per vehicle; allow for limited spaces and use the supplied address as an approximate location.",
-  "Food — supplied information allows visitors to bring meals, snacks and coolerboxes at no extra charge; plan as if no food outlet is available.",
+  "Parking — budget range R0–R50 per vehicle; allow for limited spaces and use the address as an approximate location.",
+  "Food — park information allows visitors to bring meals, snacks and coolerboxes at no extra charge; plan as if no food outlet is available.",
   "Swimwear — planning note: bring standard swimwear, towels, sandals and a change of clothes; slide-specific attire may differ.",
   "Showers, changing rooms and lockers — conservative note: do not rely on these being available; pack what your family needs for changing and valuables.",
   "Weather and ticket changes — outdoor activities may pause or close in severe weather. Budget conservatively as if tickets are not refundable unless written terms say otherwise; statutory consumer rights still apply.",
@@ -212,7 +212,7 @@ export const partyTypes = [
 export const faqs = [
   {
     question: "Where is Splash Kids Waterpark?",
-    answer: "The supplied address is Block C, eMondlo/Vryheid Road, eMondlo, 3105, KwaZulu-Natal, South Africa. The map is an address search rather than a surveyed entrance pin, so allow time to locate the gate.",
+    answer: "The address is Block C, eMondlo/Vryheid Road, eMondlo, 3105, KwaZulu-Natal, South Africa. The map is an address search rather than a surveyed entrance pin, so allow time to locate the gate.",
   },
   {
     question: "What are the opening hours?",
@@ -244,7 +244,7 @@ export const faqs = [
   },
   {
     question: "Is food available on site?",
-    answer: "Planning assumption: do not rely on an on-site food or drink outlet. Bring the meals and snacks your family needs; the supplied information allows outside food and coolerboxes at no extra charge.",
+    answer: "Planning assumption: do not rely on an on-site food or drink outlet. Bring the meals and snacks your family needs; the park information allows outside food and coolerboxes at no extra charge.",
   },
   {
     question: "Can visitors bring birthday cakes?",
@@ -285,6 +285,6 @@ export const safetyPlanningNotes = [
   "Lost children — choose a family meeting point when you arrive; no designated park meeting point is assumed.",
   "Weather — expect outdoor activities to pause or close during lightning or severe weather. Budget as if a closure does not automatically create a refund, while retaining all applicable consumer rights.",
   "Medical and accessibility needs — plan for no dedicated accessibility or medical support unless the park says otherwise; contact the team before visiting and bring any essential supplies.",
-  "Food, braai and restricted items — bring food and coolerboxes as supplied information allows; use only designated braai spaces and follow staff fire-safety instructions. No glass, alcohol or smoking policy is guided.",
+  "Food, braai and restricted items — bring food and coolerboxes as park information allows; use only designated braai spaces and follow staff fire-safety instructions. No glass, alcohol or smoking policy is guided.",
   "Hygiene and damaged equipment — use facilities only as directed, avoid rough play on wet surfaces, and stop using equipment that appears damaged; notify staff.",
 ] as const;

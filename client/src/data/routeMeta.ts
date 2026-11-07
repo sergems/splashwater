@@ -52,7 +52,7 @@ export const routeMeta: Record<string, RouteMeta> = {
   },
   "/gallery": {
     title: "Activity Photo Gallery | Splash Kids Waterpark",
-    description: "Browse representative, licensed activity photos for pools, slides, trampolines, play areas, gardens, picnic spaces and lapas.",
+    description: "Explore activity photos of pools, slides, play areas, gardens, picnic spaces and lapas.",
     keywords: ["Splash Kids photos", "waterpark gallery", "eMondlo", "family activities"],
   },
   "/faqs": {

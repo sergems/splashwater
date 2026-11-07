@@ -13,7 +13,7 @@ export default function Attractions() {
       <section className="section attractions-page-section">
         <div className="section-heading section-heading-split">
           <div><span className="eyebrow eyebrow-blue">Explore the park</span><h2>Choose your <span>kind of splash.</span></h2></div>
-          <p className="attraction-photo-note">Representative stock photos—not photographs of Splash Kids Waterpark. Numeric age, height, capacity and water-depth limits are not guessed; follow on-site signs and staff.</p>
+          <p className="attraction-photo-note">Follow on-site signs and staff instructions. Numeric age, height, capacity and water-depth limits are not confirmed.</p>
         </div>
         <div className="attraction-grid">
           {listedAttractions.map((item, index) => {
