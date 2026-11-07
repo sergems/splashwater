@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const logo = "/manus-storage/splash-kids-logo_1a88b93f.webp";
 
@@ -31,15 +31,19 @@ export default function SiteHeader() {
           <Link href="/" className="brand-lockup" aria-label="Splash Kids Waterpark home" onClick={close}>
             <img src={logo} alt="Splash Kids Waterpark logo" />
           </Link>
+          <nav className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
+            <div className="nav-group nav-group-left">
+              <Link href="/" onClick={close} className={onHome ? "nav-current" : ""}>Home</Link>
+              <a href="/#attractions" onClick={close}>The park</a>
+            </div>
+            <div className="nav-group nav-group-right">
+              <Link href="/visit" onClick={close}>Plan your visit</Link>
+              <a href="/visit#enquiry" onClick={close} className="nav-enquiry-link">Enquiry</a>
+            </div>
+          </nav>
           <button className="menu-toggle" type="button" aria-label={open ? "Close navigation menu" : "Open navigation menu"} aria-expanded={open} onClick={() => setOpen(!open)}>
             {open ? <X size={25} /> : <Menu size={25} />}
           </button>
-          <nav className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
-            <Link href="/" onClick={close} className={onHome ? "nav-current" : ""}>Home</Link>
-            <a href="/#attractions" onClick={close}>The park</a>
-            <Link href="/visit" onClick={close}>Plan your visit</Link>
-            <a href="/visit#enquiry" onClick={close} className="nav-cta">Enquire about a visit <ArrowUpRight size={15} /></a>
-          </nav>
         </div>
       </header>
     </>

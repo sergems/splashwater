@@ -5,6 +5,10 @@
 - [x] Provide a home page with the headline “BIG SPLASHES. BIG SMILES. UNFORGETTABLE FAMILY FUN!”, prominent branding, the supplied overview copy, family-friendly visuals, and clear calls to view attractions, contact the park and plan a visit.
 - [x] Keep the site responsive and accessible: readable parent-focused navigation, keyboard support including skip-to-content and Escape-to-close mobile navigation, visible focus states, useful alt text, and reduced-motion consideration. Add playful animation without compromising these needs.
 
+## Header/menu refinement
+- [x] Center the Splash Kids logo in the desktop navigation menu and keep it centered in the mobile header, with the menu toggle and links remaining easy to use.
+- [x] Change “Enquire about a visit” to “Enquiry” and present it as a regular text link to the enquiry form, not as a button.
+
 ## Reference-inspired visual refinement
 - [x] Take look-and-feel inspiration from https://zimihwonderco.co.za/ and update Splash Kids to feel more polished and modern, with a calmer family-leisure atmosphere and less overtly kiddie styling. Keep the Splash Kids identity and waterpark content; do not copy the reference site's text, logo or images.
 - [x] Give the home page a distinctive, high-impact focal point and visual rhythm that feels memorable rather than template-like; retain family-focused content and animation, and use neutral image descriptions without claiming unverified scenes depict the actual Splash Kids venue.
