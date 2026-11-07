@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { ArrowUpRight, CheckCircle2, MessageCircle } from "lucide-react";
+import { park } from "@/data/parkContent";
 
 type FormValues = {
   fullName: string;
@@ -12,21 +13,36 @@ type FormValues = {
   message: string;
 };
 
-const initial: FormValues = {
-  fullName: "",
-  phone: "",
-  email: "",
-  enquiryType: "General Visit",
-  date: "",
-  adults: "",
-  children: "",
-  message: "",
+type EnquiryFormProps = {
+  defaultType?: string;
+  partyRequest?: boolean;
 };
 
-export default function EnquiryForm() {
-  const [values, setValues] = useState(initial);
+const enquiryTypes = [
+  "General visit",
+  "Birthday party",
+  "Lapa booking",
+  "School outing",
+  "Church or community group",
+  "Organised group visit",
+  "Prices or facilities",
+  "Other",
+];
+
+export default function EnquiryForm({ defaultType = "General visit", partyRequest = false }: EnquiryFormProps) {
+  const [values, setValues] = useState<FormValues>({
+    fullName: "",
+    phone: "",
+    email: "",
+    enquiryType: defaultType,
+    date: "",
+    adults: "",
+    children: "",
+    message: "",
+  });
   const [preparedUrl, setPreparedUrl] = useState("");
   const [notice, setNotice] = useState("");
+
   const update = (key: keyof FormValues, value: string) => {
     setValues((current) => ({ ...current, [key]: value }));
     setPreparedUrl("");
@@ -36,47 +52,47 @@ export default function EnquiryForm() {
   const prepareMessage = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const message = [
-      "Hello Splash Kids Waterpark! I have an enquiry:",
+      `Hello ${park.name}! I have an enquiry:`,
       `Name: ${values.fullName}`,
       `Contact number: ${values.phone}`,
       `Email: ${values.email || "Not provided"}`,
       `Enquiry type: ${values.enquiryType}`,
-      `Preferred visit date: ${values.date || "Not provided"}`,
+      `Preferred date: ${values.date || "Not provided"}`,
       `Adults: ${values.adults || "Not provided"}`,
       `Children: ${values.children || "Not provided"}`,
-      `Anything else we should know: ${values.message || "Nothing else for now"}`,
+      `Additional requirements: ${values.message || "None provided"}`,
     ].join("\n");
-    setPreparedUrl(`https://wa.me/27648200293?text=${encodeURIComponent(message)}`);
-    setNotice("Your message is ready. Open WhatsApp below, then choose Send when you’re ready to contact the team.");
+    setPreparedUrl(`${park.whatsappHref}?text=${encodeURIComponent(message)}`);
+    setNotice("Your message is ready. Open WhatsApp below, review it and choose Send when you’re ready to contact the team.");
   };
 
   return (
-    <div className="enquiry-card" id="enquiry">
+    <section className="enquiry-card" id="enquiry" aria-labelledby="enquiry-title">
       <div className="enquiry-head">
-          <span className="eyebrow eyebrow-blue">Tell us about your plans</span>
-          <h3>How can we help?</h3>
-          <p>Planning a visit, booking a lapa, celebrating a birthday or bringing a group? Send us a message and the team will follow up about availability.</p>
+        <span className="eyebrow eyebrow-blue">{partyRequest ? "Tell us about your plans" : "We’re here to help"}</span>
+        <h2 id="enquiry-title">{partyRequest ? "Ask about a booking" : "Send an enquiry"}</h2>
+        <p>Share only the details needed for the team to reply. An enquiry does not reserve a date or confirm a booking.</p>
       </div>
       <form onSubmit={prepareMessage} className="enquiry-form">
         <div className="form-grid">
-          <label>Your name <input name="fullName" autoComplete="name" required value={values.fullName} onChange={(e) => update("fullName", e.target.value)} /></label>
-          <label>Your contact number <input name="phone" type="tel" autoComplete="tel" required value={values.phone} onChange={(e) => update("phone", e.target.value)} /></label>
-          <label>Email address (optional) <input name="email" type="email" autoComplete="email" value={values.email} onChange={(e) => update("email", e.target.value)} /></label>
-          <label>What would you like to ask about?
-            <select name="enquiryType" value={values.enquiryType} onChange={(e) => update("enquiryType", e.target.value)}>
-              <option>General Visit</option><option>Lapa Booking</option><option>Birthday Party</option><option>Group Visit</option><option>Other</option>
+          <label>Your name <input name="fullName" autoComplete="name" required value={values.fullName} onChange={(event) => update("fullName", event.target.value)} /></label>
+          <label>Your contact number <input name="phone" type="tel" autoComplete="tel" required value={values.phone} onChange={(event) => update("phone", event.target.value)} /></label>
+          <label>Email address <span className="label-optional">(optional)</span><input name="email" type="email" autoComplete="email" value={values.email} onChange={(event) => update("email", event.target.value)} /></label>
+          <label>What is your enquiry about?
+            <select name="enquiryType" value={values.enquiryType} onChange={(event) => update("enquiryType", event.target.value)}>
+              {enquiryTypes.map((type) => <option key={type}>{type}</option>)}
             </select>
           </label>
-          <label>When are you hoping to visit? <input name="date" type="date" value={values.date} onChange={(e) => update("date", e.target.value)} /></label>
-          <label>How many adults? <input name="adults" type="number" min="0" inputMode="numeric" value={values.adults} onChange={(e) => update("adults", e.target.value)} /></label>
-          <label>How many children? <input name="children" type="number" min="0" inputMode="numeric" value={values.children} onChange={(e) => update("children", e.target.value)} /></label>
-          <label className="form-wide">Your message or any special requirements <textarea name="message" rows={4} value={values.message} onChange={(e) => update("message", e.target.value)} /></label>
+          <label>Preferred date <span className="label-optional">(if known)</span><input name="date" type="date" value={values.date} onChange={(event) => update("date", event.target.value)} /></label>
+          <label>Number of adults <span className="label-optional">(if known)</span><input name="adults" type="number" min="0" inputMode="numeric" value={values.adults} onChange={(event) => update("adults", event.target.value)} /></label>
+          <label>Number of children <span className="label-optional">(if known)</span><input name="children" type="number" min="0" inputMode="numeric" value={values.children} onChange={(event) => update("children", event.target.value)} /></label>
+          <label className="form-wide">Message or additional requirements <textarea name="message" rows={4} value={values.message} onChange={(event) => update("message", event.target.value)} /></label>
         </div>
-        <p className="form-disclaimer">This message is not sent or stored by the website. We’ll prepare it for WhatsApp, where you can review it and choose whether to send. An enquiry does not confirm a booking; the team will confirm availability and arrangements.</p>
-        <button className="button button-primary" type="submit"><MessageCircle size={18} /> Prepare my message</button>
-        {notice && <div className="form-result" role="status"><CheckCircle2 size={18} /><span>{notice}</span></div>}
-        {preparedUrl && <a className="button button-whatsapp" href={preparedUrl} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Review &amp; send in WhatsApp <ArrowUpRight size={16} /></a>}
+        <p className="form-disclaimer">This website does not send or store your form details. It prepares a WhatsApp message on your device; WhatsApp’s own privacy terms apply if you choose to send it. Please do not enter a child’s name or sensitive information.</p>
+        <button className="button button-primary" type="submit"><MessageCircle size={18} aria-hidden="true" /> Prepare WhatsApp message</button>
+        {notice && <div className="form-result" role="status"><CheckCircle2 size={18} aria-hidden="true" /><span>{notice}</span></div>}
+        {preparedUrl && <a className="button button-whatsapp" href={preparedUrl} target="_blank" rel="noreferrer"><MessageCircle size={18} aria-hidden="true" /> Review &amp; send in WhatsApp <ArrowUpRight size={16} aria-hidden="true" /></a>}
       </form>
-    </div>
+    </section>
   );
 }

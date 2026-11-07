@@ -1,47 +1,92 @@
 # Splash Kids Waterpark Website — To Do
 
-## Home, brand and responsive animated experience
-- [x] Use the uploaded Splash Kids Waterpark logo and its vivid blue, yellow, red, green and orange colors to make an attractive, child-friendly website that remains easy for parents to navigate.
-- [x] Provide a home page with the headline “BIG SPLASHES. BIG SMILES. UNFORGETTABLE FAMILY FUN!”, prominent branding, the supplied overview copy, family-friendly visuals, and clear calls to view attractions, contact the park and plan a visit.
-- [x] Keep the site responsive and accessible: readable parent-focused navigation, keyboard support including skip-to-content and Escape-to-close mobile navigation, visible focus states, useful alt text, and reduced-motion consideration. Add playful animation without compromising these needs.
-
-## Header/menu refinement
-- [x] Center the Splash Kids logo in the desktop navigation menu and keep it centered in the mobile header, with the menu toggle and links remaining easy to use.
-- [x] Change “Enquire about a visit” to “Enquiry” and present it as a regular text link to the enquiry form, not as a button.
-- [x] Keep the desktop navigation items grouped close to the centered logo on both sides rather than spread across the full navigation bar.
+## Existing brand, navigation and experience to preserve
+- [x] Use the uploaded Splash Kids Waterpark logo and its aqua/blue/yellow/coral/green identity; keep the site attractive to families while parent information remains easy to find.
+- [x] Keep the logo centered in the menu/header; display uppercase navigation labels, group items near the logo on desktop, and keep a centered brand with a usable menu on mobile.
 - [x] Center “Splash Kids Waterpark · eMondlo” and “Talk to our team · +27 64 820 0293” in the top ribbon on desktop and mobile.
-- [x] Render every menu label in uppercase: “HOME,” “THE PARK,” “PLAN YOUR VISIT,” and “ENQUIRY.”
+- [x] Use responsive layouts, readable navigation, keyboard support, visible focus, descriptive alt text and reduced-motion behavior; retain animation without compromising accessibility.
+- [x] Keep the established 12px minimum font size throughout the website, including body and footer text.
+- [x] Keep the visitor-controlled enquiry handoff clear: a prepared message is not sent or stored by the website, and an enquiry does not confirm a booking.
 
-## Reference-inspired visual refinement
-- [x] Take look-and-feel inspiration from https://zimihwonderco.co.za/ and update Splash Kids to feel more polished and modern, with a calmer family-leisure atmosphere and less overtly kiddie styling. Keep the Splash Kids identity and waterpark content; do not copy the reference site's text, logo or images.
-- [x] Give the home page a distinctive, high-impact focal point and visual rhythm that feels memorable rather than template-like; retain family-focused content and animation, and use neutral image descriptions without claiming unverified scenes depict the actual Splash Kids venue.
-- [x] Remove all visible notices that label images as illustrations or concepts; keep concise, accurate alt text without claiming unverified images depict the actual Splash Kids venue.
-- [x] Preserve the user's minimum font-size requirement of 12px across the entire site, including body and footer text.
-> Reference observations from the user-provided [ZIMIH Wonder Co home page](https://zimihwonderco.co.za/): white navigation, centered hero, navy type with lilac/pink accents, soft color spots, rounded CTAs, compact service cards, generous white space and event photography. Use these as high-level cues only; do not copy their assets or copy.
-> Authentic-image check (7 Nov 2026): the [Splash Kids Waterpark Facebook page](https://www.facebook.com/people/Splash-Kids-Waterpark/61595927306788/) is a new public page, but the accessible page/photo only exposed a text graphic, not a usable venue photo. A separate local post says the playpark was under construction: https://www.facebook.com/siphiwe.buthelezi/posts/please-like-and-follow-our-new-facebook-page-splash-kids-waterpark-great-place-w/39779368998343240/. Search did not surface verifiable Splash Kids venue photos, so do not use other parks' photos. The Facebook page lists +27 81 091 2877, unlike the user blueprint's +27 64 820 0293; keep the supplied number pending confirmation. [DE VOLPE](https://www.devolpe.co.za/) is identified on its own website as a wedding venue, so do not assume its photos are Splash Kids media.
+## Sitemap, page routing and shared layout
+- [x] Keep the public pages clearly linked and accessible: Home `/`, About `/about`, Attractions `/attractions`, Visitor Information `/visit`, Entrance Fees `/prices`, Parties & Groups `/parties`, Safety `/safety`, Facilities `/facilities`, Photo & Video Gallery `/gallery`, FAQs `/faqs`, Contact `/contact`, Terms & Conditions `/terms`, and Privacy `/privacy`.
+- [x] Provide meaningful headings, page-to-page links and route-specific titles/descriptions; keep the site responsive and simple to navigate on a phone.
+- [x] Keep the public route manifest synchronized with every route; do not list the 404 route as a normal page.
 
-## Attractions, food, celebrations and gallery
-- [x] Present swimming pools, water slides, trampolines, jumping castles, jungle gyms, kids’ play area, gardens, picnic and braai areas, benches, and lapas available by advance booking.
-- [x] Explain that visitors may bring their own food and snacks; coolerboxes are welcome at no additional charge; braai facilities, picnic spaces and gardens are available; applicable braai rules, permitted equipment and food safety requirements come from management.
-- [x] Include children’s birthdays, family celebrations, school/community outings, church/youth visits, friends’ get-togethers and group day visits. Recommend advance booking for lapas and organised group visits; do not invent party packages or availability; direct enquiries to management.
-- [ ] Provide a complete responsive, accessible photo/video gallery for park imagery and family experiences, with categories for the waterpark, pools/slides, adventure zone, jumping castles/trampolines, picnic/braai areas, lapas/garden, and events. Actual park photos and the short introductory park video are still needed from management; do not substitute unrelated venue photos.
+## Home / landing page
+- [x] Immediately introduce the Splash Kids Water Park experience, using the supplied logo, the headline “Make a Splash. Create Memories!”, and a short introduction.
+- [x] Provide clear “Plan Your Visit”, “View Prices”, “Safety Rules” and “Get Directions” actions, plus a direct WhatsApp enquiry action.
+- [x] Show a quick overview of attractions and facilities, a prominent hours-and-entrance-fees preview, and a safety-first message that reassures parents and guardians without asserting unverified safety systems.
+- [x] Provide a location preview, directions, a gallery entry point, and accessible links to safety information, Terms & Conditions and Privacy Policy.
 
-## Plan your visit and location
-- [x] Provide a “Plan Your Visit” page with opening days, opening times, public holiday hours, entrance prices/age categories, packages and availability marked “to be confirmed” wherever the blueprint says they are not final; direct visitors to contact management for current details.
-- [x] List possible packages only as unconfirmed/subject to management approval: individual tickets, family packages, birthday party packages, group bookings, school/community packages, and lapa bookings.
-- [x] Include visit guidance: coolerboxes allowed at no additional charge, visitors may bring food, braai areas available, lapas need advance booking, supervise children at all times, follow posted pool/attraction safety rules, check operating hours before travelling, and confirm lapa/group availability with management.
-- [x] Display the confirmed address: Block C, eMondlo/Vryheid Road, eMondlo, 3105, KwaZulu-Natal, South Africa. Do not invent a precise map pin; mark its entrance/map coordinates as unconfirmed. Provide a directions action.
+## About Splash Kids Water Park
+- [x] Explain what the park offers, the intended visitor age groups (only once confirmed), the family experience visitors can expect, and its approach to fun, cleanliness, responsible supervision and safety.
+- [x] Use engaging, family-friendly language without unsupported claims about facilities, age limits, safety certifications, lifeguards or other safety arrangements.
 
-## Enquiries, contact and footer
-- [x] Show telephone/WhatsApp +27 64 820 0293 and info@splashKidsWaterpark.co.za, with working call, WhatsApp and email actions.
-- [x] Provide an enquiry form with full name, contact number, email address, enquiry type (General Visit / Lapa Booking / Birthday Party / Group Visit / Other), preferred visit date, number of adults, number of children, and message/special requirements.
-- [x] Make clear that submitting an enquiry does not confirm a booking; management contacts the visitor to confirm availability and arrangements. Since no database/notification service is enabled, prepare the submitted enquiry for the visitor to send to management rather than claiming it was stored or received.
-- [x] Provide footer links for Home, Plan Your Visit, Attractions & Facilities, Bookings & Enquiries, Terms & Conditions and Privacy Policy. Do not invent Facebook, Instagram or TikTok accounts; identify social channels as not yet confirmed.
+## Attractions and activities
+- [x] Create a dedicated attractions page that can grow as the park adds activities. Include confirmed activities from the supplied earlier park information: swimming pools, water slides, trampolines, jumping castles, jungle gyms, children’s play area, gardens, picnic/braai areas, benches and advance-bookable lapas.
+- [x] Treat fountains, a separate toddler zone, other pool types or additional attractions as unconfirmed until management verifies them.
+- [x] For each attraction, provide a concise description and any confirmed age, height, weight or supervision limits. Use genuine park photographs only when management supplies approved media; do not use generic imagery as if it depicts this venue.
 
-## Terms & Conditions and privacy
-- [x] Provide the supplied Terms & Conditions as a separate draft page for management review and legal approval. Preserve its draft status and “Last Updated” placeholder, and include the supplied admission, bookings/cancellations/refunds, walk-in, parent/guardian supervision, swimming/water attractions, play areas, conduct, food/coolerboxes, lapa/picnic/braai, weather/operational changes, liability, photography/privacy, health/accessibility, lost property, complaints, amendments and South African law clauses, including management-completion notes where specified.
-- [x] Provide a separate Privacy Policy page without making unsupported claims about practices; explain that website enquiries open a visitor-controlled messaging/email handoff and this version does not store form submissions.
+## Visitor Information / Plan Your Visit
+- [x] Provide the supplied address: Block C, eMondlo/Vryheid Road, eMondlo, 3105, KwaZulu-Natal, South Africa; include an embedded Google Map search and a directions link, while stating that the exact entrance/map pin is unconfirmed.
+- [x] Explain opening days and times, entrance fees and age-based prices, accepted payment methods, advance booking versus walk-ins, peak-season/weekend/public-holiday arrangements, and parking/charges. Mark every value that management has not supplied “To be confirmed”.
+- [x] Explain what visitors should bring; whether outside food/drinks are allowed; on-site food and beverage facilities; swimming attire; lockers, changing rooms, showers and ablutions; weather-related closures and refunds; and how to ask general questions. Do not invent answers.
+- [x] Preserve confirmed visit guidance: visitors may bring food; coolerboxes are welcome at no additional charge; picnic/braai facilities are available; lapas should be booked in advance; supervise children and follow posted safety rules.
+
+## Entrance Fees and Packages
+- [x] Create a separate, easy-to-update prices page for child, adult, toddler/age-based, family, group/school, birthday, promotional/seasonal and additional activity/facility charges, where applicable.
+- [x] State whether prices are per person, session or day and indicate applicable age restrictions, booking requirements and exclusions. All amounts, units and restrictions remain “To be confirmed” until management approves them.
+
+## Birthday parties, groups and special events
+- [x] Promote children’s birthday parties, family celebrations, school outings, church/community group visits and group bookings; describe private/exclusive-use options only if management confirms they are offered.
+- [x] Provide an enquiry form requesting the visitor’s name, contact number, preferred date, number of children and adults, event type and additional requirements, plus a direct WhatsApp enquiry option.
+- [x] Keep current booking caveats: advance booking is recommended for lapas and organised groups; packages and availability must be confirmed; sending an enquiry is not a confirmed booking.
+
+## Safety and parent information
+- [x] Create a prominent, standalone Safety page linked from Home and navigation. Cover parental/guardian supervision, attraction age/height/weight limits, swimming ability, lifeguard availability/coverage, swimwear/footwear, running/pushing/rough play/diving, alcohol or other impairing substances, medical/additional-support needs, hygiene, emergency procedures, first aid, lost-child procedures/meeting points, thunderstorms/weather, damaged equipment, restricted areas and staff instructions.
+- [x] Distinguish general visitor responsibilities from Splash Kids’ own safety measures; do not suggest parents alone are responsible for safety. Clearly identify all unconfirmed park-specific arrangements and obtain management confirmation before presenting procedures as official rules.
+- [x] Preserve the confirmed general guidance: supervise children at all times and follow posted pool/attraction rules and staff instructions; do not claim a certification or specific lifeguard/first-aid service.
+
+## Facilities and amenities
+- [x] Create a visual Facilities page. Advertise only facilities established by the supplied park information or subsequently confirmed by management: pools/slides, play and adventure equipment, gardens, picnic/braai areas, benches and bookable lapas.
+- [x] Show parking, toilets/ablutions, changing rooms/showers, food kiosks/tuck shop/restaurant, shaded seating, lockers, first aid, accessibility features and designated parent areas only after management confirms them; identify any limited, chargeable or availability-dependent facilities.
+
+## Photo and video gallery
+- [x] Create a mobile-friendly gallery route with a clear media area and a place for approved venue photos and short videos; include guidance to obtain parent/guardian consent and use descriptive alt text.
+- [ ] Supply genuine Splash Kids venue/facility photographs and promotional clips, obtain permissions for identifiable children, then add and optimise the approved media. No genuine venue photographs/video have been supplied; generic images are not represented as park media.
+
+## FAQs
+- [x] Answer concisely and accurately: Where is Splash Kids Water Park? What are the opening hours? How much is entrance? What ages can visit? Do adults pay? Can parents accompany children? Are swimming costumes compulsory? Can visitors bring food? Is food available on site? Can visitors bring birthday cakes? Is advance booking needed? Is parking available? What happens if it rains? Are toddler facilities available? Can schools/groups book? Who should visitors contact in an emergency?
+- [x] Keep unknown answers explicitly “To be confirmed” and easy to update.
+
+## Contact, forms, privacy and legal pages
+- [x] Preserve the supplied contact details: telephone/WhatsApp +27 64 820 0293, info@splashKidsWaterpark.co.za, and the address above; keep working call, WhatsApp, email and directions links. Do not replace the phone with a conflicting public listing without owner confirmation.
+- [x] Create a dedicated Contact page with the supplied contact methods and location, map/directions, hours caveat, the publicly announced Facebook page and a simple enquiry form.
+- [x] Request only information needed to respond. Show a clear privacy notice and accurately describe the message handoff and information handling; do not claim secure server processing/storage when the website does not store submissions.
+- [x] Keep a separate draft Terms & Conditions page. Cover entry fees/ticket validity; booking, cancellation, rescheduling/refunds and walk-ins; parent/guardian duties; attraction restrictions and conduct; swimwear/food/drink; weather/operational changes; lost property; photography/filming; group and birthday booking conditions; accessibility/accommodation; incidents/complaints; lawful refusal/removal grounds; and liability only as permitted under South African law. Keep draft status and management/legal-review notice; do not imply unlawful exclusion of liability.
+- [x] Keep a separate Privacy Policy page, with no unsupported data-practice claims; the current form prepares a visitor-controlled WhatsApp message and does not store submissions.
+
+## Design, performance, accessibility and content maintenance
+- [x] Apply the brief’s feel: fun, energetic, child-friendly but professional; aqua/turquoise and water-inspired shades with bright yellow/orange/coral accents, readable white space, friendly type, rounded elements and accessible contrast; do not overcrowd or make the site overly childish.
+- [x] Optimise the supplied logo, retain fast loading, keyboard-friendly navigation, readable text and accessible controls, and use reduced-motion support.
+- [x] Centralize editable contact, opening hours, rates, attractions, facilities, visitor details, safety-confirmation topics, party types and FAQs in `client/src/data/parkContent.ts`; keep route titles/descriptions in `client/src/data/routeMeta.ts`.
+- [x] Provide route-specific static HTML with meaningful body content, titles, descriptions and keywords, plus absolute Open Graph/Twitter preview-image metadata and a site favicon; avoid guessing canonical/share URLs before the public origin is confirmed.
+- [x] Keep analytics optional and absent by default; describe third-party WhatsApp and Google Maps use in the draft Privacy page.
+- [x] Keep the current site static without login, database or server-side form storage.
+- [ ] Decide whether management needs an owner-editable public CMS. There is no admin content editor; policy copy and substantial page text remain in components and source changes require a build/release.
+- [ ] After choosing the public domain, check canonical URL and the published sitemap/robots responses; the Preview runs through Vite and does not verify production gateway documents.
+
+## Future expansion and management handoff
+- [x] Keep page/data structures ready for future online tickets/payments, reservations, birthday and group booking requests, digital waivers/consents, campaigns, feedback/testimonials, gift vouchers, newsletters and added attractions/facilities; no integrations are enabled yet.
+- [x] Provide the requested sitemap, static platform/hosting recommendation, indicative post-input timeline, content/photo requirements, ownership/admin and support/training status in `SITE-HANDOFF.md`.
+- [ ] Confirm once-off design/development, annual domain/hosting/security/maintenance, third-party subscriptions and future-feature costs with the chosen provider; the project brief supplied no price quote or account billing terms.
+- [ ] Before launch, obtain management input: approved hours/prices/payment/booking rules; verified ages/restrictions and safety/first-aid/weather procedures; confirmed facilities and any charges; accurate map entrance pin; approved venue photos/video and child-image permissions; correct phone/social URLs; final legal/privacy approval; CMS/domain/analytics decisions.
 
 ## Publishing setup
-- [x] Serve the complete current page route list in `/manus-routes.json` and keep it synchronized with the website routes.
-- [x] Build and serve as a static website (no database or login); configure project branding with a durable HTTPS URL for the supplied logo before checkpointing.
+- [x] Serve the 13 public pages through `/manus-routes.json`, exclude the 404 page and keep declarations synchronized.
+- [x] Build the multi-page static site and prerender the 13 route documents without enabling login, database or server features; retain project branding from the supplied logo.
+
+> Visual reference supplied by the owner: [ZIMIH Wonder Co](https://zimihwonderco.co.za/) showed white navigation, a centered hero, navy type with lilac/pink highlights, soft pastel spots, rounded calls to action, compact service cards and generous spacing. Use these only as high-level cues; no reference-site copy or assets were reused.
+>
+> Authentic-media/source check (7 Nov 2026): the public [Splash Kids Waterpark Facebook page](https://www.facebook.com/people/Splash-Kids-Waterpark/61595927306788/) was announced as a new page in this [owner announcement](https://www.facebook.com/siphiwe.buthelezi/posts/please-like-and-follow-our-new-facebook-page-splash-kids-waterpark-great-place-w/39779368998343240/), but accessible page/photo content did not expose a verifiable venue photo. That Facebook page lists +27 81 091 2877, which conflicts with the user’s brief; retain +27 64 820 0293 until management confirms a change. [De Volpe](https://www.devolpe.co.za/) identifies itself as a wedding venue, so its images are not Splash Kids venue media.

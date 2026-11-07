@@ -4,16 +4,34 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import About from "./pages/About";
+import Attractions from "./pages/Attractions";
+import Contact from "./pages/Contact";
+import Facilities from "./pages/Facilities";
+import FAQs from "./pages/FAQs";
+import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
-import Visit from "./pages/Visit";
-import Terms from "./pages/Terms";
+import Parties from "./pages/Parties";
+import Prices from "./pages/Prices";
 import Privacy from "./pages/Privacy";
+import Safety from "./pages/Safety";
+import Terms from "./pages/Terms";
+import Visit from "./pages/Visit";
 
-function Router() {
+function AppRoutes() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/attractions" component={Attractions} />
       <Route path="/visit" component={Visit} />
+      <Route path="/prices" component={Prices} />
+      <Route path="/parties" component={Parties} />
+      <Route path="/safety" component={Safety} />
+      <Route path="/facilities" component={Facilities} />
+      <Route path="/gallery" component={Gallery} />
+      <Route path="/faqs" component={FAQs} />
+      <Route path="/contact" component={Contact} />
       <Route path="/terms" component={Terms} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/404" component={NotFound} />
@@ -22,14 +40,12 @@ function Router() {
   );
 }
 
-function App() {
+export default function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
-        <TooltipProvider><Toaster /><Router /></TooltipProvider>
+        <TooltipProvider><Toaster /><AppRoutes /></TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
   );
 }
-
-export default App;
