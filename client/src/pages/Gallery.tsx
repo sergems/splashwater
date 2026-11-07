@@ -1,18 +1,16 @@
-import { Camera, Image, Mail, Video } from "lucide-react";
+import { ArrowRight, Camera } from "lucide-react";
 import { Link } from "wouter";
 import PageHero from "@/components/PageHero";
 import SiteLayout from "@/components/SiteLayout";
-import { park } from "@/data/parkContent";
-
-const galleryCategories = ["Waterpark & pools", "Slides & water play", "Play & adventure", "Gardens & picnic areas", "Lapas & braai spaces", "Family events"];
+import { listedAttractions } from "@/data/parkContent";
 
 export default function Gallery() {
   return (
     <SiteLayout className="information-page gallery-page">
-      <PageHero eyebrow="Photo & video gallery" title="A closer look at" accent="Splash Kids." description="This space is ready for approved photographs and short videos of the actual park, its facilities and family events." />
-      <section className="section gallery-empty-state"><div className="gallery-empty-icon"><Image size={31} aria-hidden="true"/><span><Video size={17} aria-hidden="true"/></span></div><span className="eyebrow eyebrow-blue">Park media</span><h2>Venue photographs &amp; videos</h2><p>Authentic park photographs and video clips have not yet been supplied. The gallery will use approved Splash Kids media only—not generic or unrelated waterpark pictures.</p><div className="gallery-media-types"><span><Camera size={17} aria-hidden="true"/> Venue photos</span><span><Video size={17} aria-hidden="true"/> Short videos</span><span><Image size={17} aria-hidden="true"/> Facility details</span></div><a className="button button-outline" href={park.emailHref}><Mail size={17} aria-hidden="true"/> Contact the team</a></section>
-      <section className="section gallery-categories-section"><div className="section-heading"><span className="eyebrow eyebrow-blue">Gallery structure</span><h2>Browse by <span>park experience.</span></h2><p>Approved assets can be added to these categories as the gallery grows.</p></div><div className="gallery-category-grid">{galleryCategories.map((category, index) => <article key={category} className="gallery-category-card"><span>0{index + 1}</span><h3>{category}</h3><p>Park media to be added.</p></article>)}</div><p className="gallery-consent-note">Before sharing an identifiable child’s image or video, the appropriate parent or guardian consent and permissions must be obtained.</p></section>
-      <section className="section page-bottom-cta"><div><span className="eyebrow eyebrow-blue">See the activities</span><h2>Discover what the park offers.</h2><p>Browse the supplied list of Splash Kids attractions and facilities.</p></div><Link className="button button-primary" href="/attractions">Explore attractions</Link></section>
+      <PageHero eyebrow="Activity photo gallery" title="See the fun." accent="Picture the day." description="Browse representative photos of the activities listed at Splash Kids Waterpark. The images show similar experiences—not the eMondlo venue." />
+      <section className="section gallery-activity-intro"><span className="gallery-activity-intro-label"><Camera size={18} aria-hidden="true"/> Representative activity photos</span><p>These are real, licensed photographs selected to represent the kinds of family activities described on this site. They are not photographs of Splash Kids Waterpark.</p></section>
+      <section className="section gallery-activity-grid" aria-label="Representative Splash Kids activity photos">{listedAttractions.map((item, index) => <article className="gallery-activity-card" key={item.name}><figure className="gallery-activity-photo"><img src={item.photo.src} alt={item.photo.alt} width={item.photo.width} height={item.photo.height} loading="lazy" decoding="async"/><span className="gallery-activity-index" aria-hidden="true">0{index + 1}</span></figure><div className="gallery-activity-caption"><span className="eyebrow eyebrow-blue">Splash Kids activity</span><h2>{item.name}</h2><p>{item.description}</p></div></article>)}</section>
+      <section className="section page-bottom-cta"><div><span className="eyebrow eyebrow-blue">Plan your family visit</span><h2>Explore the activities.</h2><p>Read the family guidance, budget estimates and practical visit information.</p></div><Link className="button button-primary" href="/attractions">Browse attractions <ArrowRight size={17} aria-hidden="true"/></Link></section>
     </SiteLayout>
   );
 }

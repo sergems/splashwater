@@ -1,6 +1,6 @@
 # Activity photo sources
 
-All nine selections are real stock photographs for the activity cards. They are representative images, not photographs of Splash Kids Waterpark. Each individual photo page and its platform license were checked before selection. Each visible site credit links to its source photo; credits are retained even where attribution is not required.
+All nine selections are real stock photographs for the activity cards. They are representative images, not photographs of Splash Kids Waterpark. Each individual photo page and its platform license were checked before selection. The public activity cards do not display photographer or stock-site credit captions; source and license details remain in this project register. The checked Unsplash and Pexels licenses do not require visible attribution.
 
 The website uses orientation-corrected WebP files at quality 80 with a 1400px maximum edge and no cropping. The optimized files together are about 2.61 MB. The full-resolution downloads were used only for processing and are not part of the published site; the linked source pages remain the reference for the originals.
 

@@ -27,12 +27,12 @@ export const routeMeta: Record<string, RouteMeta> = {
   },
   "/visit": {
     title: "Plan Your Visit to Splash Kids Waterpark",
-    description: "Find the eMondlo address, directions and practical visitor information. Contact Splash Kids to confirm current hours and arrangements.",
+    description: "Find the eMondlo address, directions and clearly labeled planning estimates for hours, entry, bookings, parking and amenities.",
     keywords: ["plan a visit", "Splash Kids directions", "eMondlo", "visitor information"],
   },
   "/prices": {
     title: "Entrance Fees & Packages | Splash Kids Waterpark",
-    description: "View entrance-fee and package information for Splash Kids Waterpark. Current prices and age categories must be confirmed with management.",
+    description: "View nonbinding budget ranges for Splash Kids Waterpark admission, families, groups, celebrations and lapa bookings.",
     keywords: ["waterpark prices", "entrance fees", "family packages", "Splash Kids"],
   },
   "/parties": {
@@ -42,17 +42,17 @@ export const routeMeta: Record<string, RouteMeta> = {
   },
   "/safety": {
     title: "Visitor Safety & Parent Information | Splash Kids",
-    description: "Read visitor safety guidance for Splash Kids Waterpark and contact management to confirm attraction rules and on-site procedures.",
+    description: "Read conservative family safety guidance for Splash Kids Waterpark. Numeric attraction limits are not guessed; follow current signs and staff.",
     keywords: ["waterpark safety", "parent information", "visitor rules", "Splash Kids"],
   },
   "/facilities": {
     title: "Facilities & Amenities | Splash Kids Waterpark",
-    description: "Explore confirmed Splash Kids Waterpark facilities, including pools, play areas, gardens, picnic and braai spaces and bookable lapas.",
+    description: "Explore Splash Kids Waterpark's listed pools, play areas, gardens, picnic and braai spaces, lapas and conservative amenity estimates.",
     keywords: ["waterpark facilities", "picnic and braai", "lapas", "eMondlo"],
   },
   "/gallery": {
-    title: "Splash Kids Waterpark Photo & Video Gallery",
-    description: "Visit the Splash Kids Waterpark gallery page for approved venue photographs and videos as park media becomes available.",
+    title: "Activity Photo Gallery | Splash Kids Waterpark",
+    description: "Browse representative, licensed activity photos for pools, slides, trampolines, play areas, gardens, picnic spaces and lapas.",
     keywords: ["Splash Kids photos", "waterpark gallery", "eMondlo", "family activities"],
   },
   "/faqs": {
@@ -67,7 +67,7 @@ export const routeMeta: Record<string, RouteMeta> = {
   },
   "/terms": {
     title: "Terms & Conditions | Splash Kids Waterpark",
-    description: "Read the working-draft visitor, booking, safety and facility terms for Splash Kids Waterpark. Management and legal review are required.",
+    description: "Read draft visitor and booking terms for Splash Kids Waterpark, with nonbinding planning estimates and consumer-rights cautions.",
     keywords: ["waterpark terms", "booking conditions", "visitor safety", "Splash Kids"],
   },
   "/privacy": {

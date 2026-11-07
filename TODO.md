@@ -25,19 +25,24 @@
 
 ## Attractions and activities
 - [x] Create a dedicated attractions page that can grow as the park adds activities. Include confirmed activities from the supplied earlier park information: swimming pools, water slides, trampolines, jumping castles, jungle gyms, children’s play area, gardens, picnic/braai areas, benches and advance-bookable lapas.
-- [x] Treat fountains, a separate toddler zone, other pool types or additional attractions as unconfirmed until management verifies them.
-- [x] For each attraction, provide a concise description and any confirmed age, height, weight or supervision limits; do not claim that stock photos depict this venue.
-- [x] Under “Choose your kind of splash,” add one real web-sourced photo for each confirmed activity: swimming pools, water slides, trampolines, jumping castles, jungle gyms, children’s play area, gardens, picnic/braai areas, and lapas/benches. Use a suitable commercial-use license, credit the photo source, optimize the files for web, and keep the images clearly representative rather than claiming they show Splash Kids.
+- [x] Treat fountains, a separate toddler zone, other pool types or additional attractions conservatively; do not include them in visit planning unless they are listed as available.
+- [x] For each attraction, provide a concise description and cautious planning guidance; do not invent numeric age, height, weight, depth or capacity limits, and do not claim stock photos depict this venue.
+- [x] Under “Choose your kind of splash,” add one real web-sourced photo for each listed activity. Use a suitable commercial-use license, optimize the files for web, retain source/license details in the project, and do not display photographer or stock-site credits on the photos.
+
+## Requested estimates and photo-credit update
+- [x] Replace public-facing “to be confirmed”/“needs confirmation” placeholders for opening hours, prices, visitor arrangements, parking, facilities, bookings, map location and FAQs with clearly labeled planning estimates or conservative assumptions. Do not present estimates as official Splash Kids tariffs, hours or policies.
+- [x] Remove all visible photographer and stock-site credit captions from the website’s activity photographs, while keeping the project source/license register and preserving the photos' representative—not venue-specific—disclosure.
+- [x] Keep safety and legal caveats responsible: use conservative general safety guidance; do not invent numeric attraction limits, medical provision, or contractual rules; label estimates as nonbinding and preserve applicable consumer rights.
 
 ## Visitor Information / Plan Your Visit
-- [x] Provide the supplied address: Block C, eMondlo/Vryheid Road, eMondlo, 3105, KwaZulu-Natal, South Africa; include an embedded Google Map search and a directions link, while stating that the exact entrance/map pin is unconfirmed.
-- [x] Explain opening days and times, entrance fees and age-based prices, accepted payment methods, advance booking versus walk-ins, peak-season/weekend/public-holiday arrangements, and parking/charges. Mark every value that management has not supplied “To be confirmed”.
-- [x] Explain what visitors should bring; whether outside food/drinks are allowed; on-site food and beverage facilities; swimming attire; lockers, changing rooms, showers and ablutions; weather-related closures and refunds; and how to ask general questions. Do not invent answers.
+- [x] Provide the supplied address: Block C, eMondlo/Vryheid Road, eMondlo, 3105, KwaZulu-Natal, South Africa; include an embedded Google Map search and directions link, and label the address-based result as an approximate entrance location.
+- [x] Explain estimated opening days/times, entrance fees and age categories, payment and booking assumptions, walk-ins, peak/weekend/public-holiday arrangements and parking charges; label each as a nonbinding planning estimate rather than an official park value.
+- [x] Explain what visitors should bring; the supplied allowance for outside food and coolerboxes; estimated assumptions for on-site food, swimwear, lockers/changing facilities, weather closures and refunds; and where to ask questions. Do not invent numeric safety limits or present estimates as official rules.
 - [x] Preserve confirmed visit guidance: visitors may bring food; coolerboxes are welcome at no additional charge; picnic/braai facilities are available; lapas should be booked in advance; supervise children and follow posted safety rules.
 
 ## Entrance Fees and Packages
 - [x] Create a separate, easy-to-update prices page for child, adult, toddler/age-based, family, group/school, birthday, promotional/seasonal and additional activity/facility charges, where applicable.
-- [x] State whether prices are per person, session or day and indicate applicable age restrictions, booking requirements and exclusions. All amounts, units and restrictions remain “To be confirmed” until management approves them.
+- [x] State that prices are estimates per person/booking and include estimated child, adult, toddler, family, group, birthday, seasonal and lapa ranges; identify assumed ages and exclusions. Clearly say these are not official Splash Kids prices or a booking quote.
 
 ## Birthday parties, groups and special events
 - [x] Promote children’s birthday parties, family celebrations, school outings, church/community group visits and group bookings; describe private/exclusive-use options only if management confirms they are offered.
@@ -46,20 +51,20 @@
 
 ## Safety and parent information
 - [x] Create a prominent, standalone Safety page linked from Home and navigation. Cover parental/guardian supervision, attraction age/height/weight limits, swimming ability, lifeguard availability/coverage, swimwear/footwear, running/pushing/rough play/diving, alcohol or other impairing substances, medical/additional-support needs, hygiene, emergency procedures, first aid, lost-child procedures/meeting points, thunderstorms/weather, damaged equipment, restricted areas and staff instructions.
-- [x] Distinguish general visitor responsibilities from Splash Kids’ own safety measures; do not suggest parents alone are responsible for safety. Clearly identify all unconfirmed park-specific arrangements and obtain management confirmation before presenting procedures as official rules.
+- [x] Distinguish general visitor responsibilities from Splash Kids’ own safety measures; use conservative nonbinding planning assumptions for unknown procedures and do not present them as official rules or invent numeric restrictions.
 - [x] Preserve the confirmed general guidance: supervise children at all times and follow posted pool/attraction rules and staff instructions; do not claim a certification or specific lifeguard/first-aid service.
 
 ## Facilities and amenities
 - [x] Create a visual Facilities page. Advertise only facilities established by the supplied park information or subsequently confirmed by management: pools/slides, play and adventure equipment, gardens, picnic/braai areas, benches and bookable lapas.
-- [x] Show parking, toilets/ablutions, changing rooms/showers, food kiosks/tuck shop/restaurant, shaded seating, lockers, first aid, accessibility features and designated parent areas only after management confirms them; identify any limited, chargeable or availability-dependent facilities.
+- [x] For facilities without supplied details, show conservative availability/price assumptions as estimates; distinguish them from the listed park features and do not claim unverified amenities as facts.
 
 ## Photo and video gallery
-- [x] Create a mobile-friendly gallery route with a clear media area and a place for approved venue photos and short videos; include guidance to obtain parent/guardian consent and use descriptive alt text.
+- [x] Create a mobile-friendly activity-photo gallery using the nine optimized, licensed representative images, with descriptive alt text and a clear disclosure in both the Gallery page and Home teaser that they are not Splash Kids venue photos. Do not display photographer or stock-site credits; retain provenance in the project register and include parent/guardian-consent guidance for future venue media.
 - [ ] Supply genuine Splash Kids venue/facility photographs and promotional clips, obtain permissions for identifiable children, then add and optimise the approved media. No genuine venue photographs/video have been supplied; generic images are not represented as park media.
 
 ## FAQs
 - [x] Answer concisely and accurately: Where is Splash Kids Water Park? What are the opening hours? How much is entrance? What ages can visit? Do adults pay? Can parents accompany children? Are swimming costumes compulsory? Can visitors bring food? Is food available on site? Can visitors bring birthday cakes? Is advance booking needed? Is parking available? What happens if it rains? Are toddler facilities available? Can schools/groups book? Who should visitors contact in an emergency?
-- [x] Keep unknown answers explicitly “To be confirmed” and easy to update.
+- [x] Replace public “to be confirmed” answers with clearly labeled planning estimates or conservative assumptions; keep them centralized and easy to update.
 
 ## Contact, forms, privacy and legal pages
 - [x] Preserve the supplied contact details: telephone/WhatsApp +27 64 820 0293, info@splashKidsWaterpark.co.za, and the address above; keep working call, WhatsApp, email and directions links. Do not replace the phone with a conflicting public listing without owner confirmation.
