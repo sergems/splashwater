@@ -26,7 +26,8 @@
 ## Attractions and activities
 - [x] Create a dedicated attractions page that can grow as the park adds activities. Include confirmed activities from the supplied earlier park information: swimming pools, water slides, trampolines, jumping castles, jungle gyms, children’s play area, gardens, picnic/braai areas, benches and advance-bookable lapas.
 - [x] Treat fountains, a separate toddler zone, other pool types or additional attractions as unconfirmed until management verifies them.
-- [x] For each attraction, provide a concise description and any confirmed age, height, weight or supervision limits. Use genuine park photographs only when management supplies approved media; do not use generic imagery as if it depicts this venue.
+- [x] For each attraction, provide a concise description and any confirmed age, height, weight or supervision limits; do not claim that stock photos depict this venue.
+- [x] Under “Choose your kind of splash,” add one real web-sourced photo for each confirmed activity: swimming pools, water slides, trampolines, jumping castles, jungle gyms, children’s play area, gardens, picnic/braai areas, and lapas/benches. Use a suitable commercial-use license, credit the photo source, optimize the files for web, and keep the images clearly representative rather than claiming they show Splash Kids.
 
 ## Visitor Information / Plan Your Visit
 - [x] Provide the supplied address: Block C, eMondlo/Vryheid Road, eMondlo, 3105, KwaZulu-Natal, South Africa; include an embedded Google Map search and a directions link, while stating that the exact entrance/map pin is unconfirmed.
