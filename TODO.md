@@ -7,7 +7,9 @@
 
 ## Reference-inspired visual refinement
 - [x] Take look-and-feel inspiration from https://zimihwonderco.co.za/ and update Splash Kids to feel more polished and modern, with a calmer family-leisure atmosphere and less overtly kiddie styling. Keep the Splash Kids identity and waterpark content; do not copy the reference site's text, logo or images.
+- [x] Give the home page a distinctive, high-impact focal point and visual rhythm that feels memorable rather than template-like; retain family-focused content and animation, and clearly identify generic concept imagery as illustrative rather than as a photograph of the actual park.
 - [x] Preserve the user's minimum font-size requirement of 12px across the entire site, including body and footer text.
+> Reference observations from the user-provided [ZIMIH Wonder Co home page](https://zimihwonderco.co.za/): white navigation, centered hero, navy type with lilac/pink accents, soft color spots, rounded CTAs, compact service cards, generous white space and event photography. Use these as high-level cues only; do not copy their assets or copy.
 
 ## Attractions, food, celebrations and gallery
 - [x] Present swimming pools, water slides, trampolines, jumping castles, jungle gyms, kids’ play area, gardens, picnic and braai areas, benches, and lapas available by advance booking.

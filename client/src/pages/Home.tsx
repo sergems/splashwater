@@ -3,7 +3,8 @@ import { ArrowDown, ArrowRight, ArrowUpRight, Baby, Castle, CircleHelp, Clock3, 
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
-const heroImage = "/manus-storage/async-images/eyWpaYSGBVRNlv6VgmHSrT/image-1.webp";
+const heroImage = "/manus-storage/async-images/cGd9ozNxyph5wpS9hCTFeZ/image-1.webp";
+const heroMobileImage = "/manus-storage/async-images/cGd9ozNxyph5wpS9hCTFeZ/image-2.webp";
 const picnicImage = "/manus-storage/async-images/esvWjkq1lHdNGQ0cf8m5Am/image-1.webp";
 const mapsUrl = "https://www.google.com/maps/search/?api=1&query=Block+C%2C+eMondlo%2FVryheid+Road%2C+eMondlo%2C+3105%2C+KwaZulu-Natal%2C+South+Africa";
 
@@ -46,7 +47,10 @@ export default function Home() {
             <div className="hero-art-wrap">
               <div className="hero-orbit orbit-one" aria-hidden="true" /><div className="hero-orbit orbit-two" aria-hidden="true" />
               <motion.div className="hero-art" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.75, ease: "easeOut" }}>
-                <img src={heroImage} alt="Illustrative concept image of a family at an outdoor splash park; it does not depict the actual venue." fetchPriority="high" />
+                <picture>
+                  <source media="(max-width: 760px)" srcSet={heroMobileImage} />
+                  <img src={heroImage} alt="Illustrative concept image of a family at an outdoor splash park; it does not depict the actual venue." fetchPriority="high" />
+                </picture>
               </motion.div>
               <div className="hero-sticker"><span>ILLUSTRATIVE CONCEPT</span><strong>Not a park photograph</strong></div>
               <span className="bubble bubble-a" aria-hidden="true" /><span className="bubble bubble-b" aria-hidden="true" /><span className="bubble bubble-c" aria-hidden="true" />
