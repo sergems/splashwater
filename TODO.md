@@ -44,6 +44,10 @@
 - [x] Create a separate, easy-to-update prices page for child, adult, toddler/age-based, family, group/school, birthday, promotional/seasonal and additional activity/facility charges, where applicable.
 - [x] State that prices are estimates per person/booking and include estimated child, adult, toddler, family, group, birthday, seasonal and lapa ranges; identify assumed ages and exclusions. Clearly say these are not official Splash Kids prices or a booking quote.
 
+## Price-page visual polish and error fixes
+- [x] Replace the wide, horizontally scrolling price table with a clear, premium and fully responsive layout so all prices, assumptions and disclosures remain readable on desktop and mobile without clipping. Preserve the centralized estimate values and clearly mark them as nonbinding estimates.
+- [x] Resolve all actionable TypeScript/static-build errors found in the project while preserving its 13 prerendered routes, route metadata, 12px minimum text size and required platform-config behavior. Do not treat nonfatal platform/tool warnings as application errors unless they break the site.
+
 ## Birthday parties, groups and special events
 - [x] Promote children’s birthday parties, family celebrations, school outings, church/community group visits and group bookings; describe private/exclusive-use options only if management confirms they are offered.
 - [x] Provide an enquiry form requesting the visitor’s name, contact number, preferred date, number of children and adults, event type and additional requirements, plus a direct WhatsApp enquiry option.
