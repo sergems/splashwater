@@ -830,6 +830,8 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.035em; }
   color: inherit;
   font: inherit;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .045em;
   transition: color .18s ease;
 }
 .main-nav a:hover,
