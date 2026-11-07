@@ -27,7 +27,7 @@ export const routeMeta: Record<string, RouteMeta> = {
   },
   "/visit": {
     title: "Plan Your Visit to Splash Kids Waterpark",
-    description: "Find the eMondlo address, directions and clearly labeled planning estimates for hours, entry, bookings, parking and amenities.",
+    description: "Find the eMondlo address, directions and clearly labeled planning notes for hours, entry, bookings, parking and amenities.",
     keywords: ["plan a visit", "Splash Kids directions", "eMondlo", "visitor information"],
   },
   "/prices": {
@@ -47,7 +47,7 @@ export const routeMeta: Record<string, RouteMeta> = {
   },
   "/facilities": {
     title: "Facilities & Amenities | Splash Kids Waterpark",
-    description: "Explore Splash Kids Waterpark's listed pools, play areas, gardens, picnic and braai spaces, lapas and conservative amenity estimates.",
+    description: "Explore Splash Kids Waterpark's listed pools, play areas, gardens, picnic and braai spaces, lapas and conservative amenity guidance.",
     keywords: ["waterpark facilities", "picnic and braai", "lapas", "eMondlo"],
   },
   "/gallery": {
@@ -67,7 +67,7 @@ export const routeMeta: Record<string, RouteMeta> = {
   },
   "/terms": {
     title: "Terms & Conditions | Splash Kids Waterpark",
-    description: "Read draft visitor and booking terms for Splash Kids Waterpark, with nonbinding planning estimates and consumer-rights cautions.",
+    description: "Read draft visitor and booking terms for Splash Kids Waterpark, with nonbinding planning notes and consumer-rights cautions.",
     keywords: ["waterpark terms", "booking conditions", "visitor safety", "Splash Kids"],
   },
   "/privacy": {

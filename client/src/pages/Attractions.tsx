@@ -28,7 +28,7 @@ export default function Attractions() {
                   <div className={`attraction-icon attraction-icon-${index + 1}`}><Icon size={24} aria-hidden="true" /></div>
                   <h3>{item.name}</h3>
                   <p>{item.description}</p>
-                  <div className="restriction-note"><strong>Planning estimate</strong><span>{item.restriction}</span></div>
+                  <div className="restriction-note"><strong>Planning guide</strong><span>{item.restriction}</span></div>
                 </div>
               </article>
             );

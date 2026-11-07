@@ -21,9 +21,22 @@ export default function Home() {
     <MotionConfig reducedMotion="user">
       <SiteLayout className="home-page">
         <section className="home-hero" aria-labelledby="home-title">
-          <div className="home-hero-copy">
-            <span className="eyebrow"><span className="eyebrow-dot" aria-hidden="true" /> Family waterpark days in eMondlo</span>
-            <h1 id="home-title">Make a splash.<br /><span>Create memories!</span></h1>
+          <div className="hero-atmosphere" aria-hidden="true">
+            <span className="hero-sun-glow" />
+            <span className="hero-bubble hero-bubble-one" />
+            <span className="hero-bubble hero-bubble-two" />
+            <span className="hero-bubble hero-bubble-three" />
+            <span className="hero-spark hero-spark-one">✦</span>
+            <span className="hero-spark hero-spark-two">✦</span>
+            <span className="hero-wave hero-wave-back" />
+            <span className="hero-wave hero-wave-front" />
+          </div>
+          <motion.div className="home-hero-copy" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}>
+            <div className="hero-kicker-row">
+              <span className="eyebrow"><span className="eyebrow-dot" aria-hidden="true" /> Family waterpark days in eMondlo</span>
+              <span className="hero-kicker-badge"><Waves size={14} aria-hidden="true" /> Family day ready</span>
+            </div>
+            <h1 id="home-title"><span>Make a splash.</span><span className="hero-title-accent">Create memories!</span></h1>
             <p>Bring the family together for pools, slides, outdoor play and time to unwind at Splash Kids Waterpark.</p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/visit">Plan Your Visit <ArrowRight size={18} aria-hidden="true" /></Link>
@@ -34,11 +47,18 @@ export default function Home() {
               <a href={park.mapSearchUrl} target="_blank" rel="noreferrer"><Footprints size={16} aria-hidden="true" /> Get Directions</a>
               <a href={park.whatsappHref} target="_blank" rel="noreferrer"><MessageCircle size={16} aria-hidden="true" /> WhatsApp the team</a>
             </div>
-            <p className="hero-note">Planning estimate: open weekends &amp; school/public holidays, about 09:00–17:00. See Prices for budget ranges.</p>
-          </div>
-          <motion.div className="home-hero-brand" initial={false} animate={{ y: [0, -7, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}>
+            <div className="hero-proof-row" aria-label="Planning highlights">
+              <span><span className="hero-proof-icon"><ShieldCheck size={14} aria-hidden="true" /></span>Parent-friendly planning</span>
+              <span><span className="hero-proof-icon hero-proof-icon-aqua"><Waves size={14} aria-hidden="true" /></span>Pools, play &amp; picnic time</span>
+            </div>
+            <p className="hero-note">Planning note: open weekends &amp; school/public holidays, about 09:00–17:00. See Prices for budget ranges.</p>
+          </motion.div>
+          <motion.div className="home-hero-brand" initial={{ opacity: 0, scale: 0.94, y: 18 }} animate={{ opacity: 1, scale: 1, y: [0, -8, 0], rotate: [0, 0.6, 0] }} transition={{ opacity: { duration: 0.7, delay: 0.14 }, scale: { duration: 0.7, delay: 0.14, ease: [0.22, 1, 0.36, 1] }, y: { duration: 6.5, delay: 0.85, repeat: Infinity, ease: "easeInOut" }, rotate: { duration: 6.5, delay: 0.85, repeat: Infinity, ease: "easeInOut" } }}>
             <span className="brand-orb orb-one" aria-hidden="true" /><span className="brand-orb orb-two" aria-hidden="true" />
-            <img src={logo} alt="Splash Kids Waterpark logo, featuring children, water slides and splashing water" />
+            <div className="hero-brand-topline"><span><span className="status-dot" /> Your next family day</span><strong>01</strong></div>
+            <div className="hero-logo-frame"><img src={logo} alt="Splash Kids Waterpark logo, featuring children, water slides and splashing water" /></div>
+            <div className="hero-activity-tag hero-activity-tag-one"><Waves size={15} aria-hidden="true" /> Splash &amp; play</div>
+            <div className="hero-activity-tag hero-activity-tag-two"><TentTree size={15} aria-hidden="true" /> Picnic &amp; braai</div>
             <div className="hero-location-chip"><span className="status-dot" /> Block C · eMondlo, KwaZulu-Natal</div>
           </motion.div>
           <div className="hero-waterline" aria-hidden="true"><span /><span /><span /></div>
@@ -49,14 +69,14 @@ export default function Home() {
         </section>
 
         <section className="section section-visit-snapshot">
-          <div className="section-heading section-heading-split">
-            <div><span className="eyebrow eyebrow-blue">Before you head out</span><h2>Plan a day <span>to remember.</span></h2></div>
-            <p>Use these visit estimates for planning, then contact the team for the day’s schedule and current rates.</p>
+          <div className="visit-snapshot-heading">
+            <div className="visit-snapshot-title"><span className="eyebrow eyebrow-blue">Before you head out</span><h2>Plan a day <span>to remember.</span></h2></div>
+            <div className="visit-snapshot-brief"><span className="visit-snapshot-brief-icon"><Clock3 size={17} aria-hidden="true" /></span><div><strong>Planning guidance</strong><p>Use this visit guidance for planning, then contact the team for the day’s schedule and current rates.</p></div></div>
           </div>
           <div className="visit-snapshot-grid">
-            <article className="snapshot-card snapshot-hours"><span className="snapshot-icon"><Clock3 size={21} aria-hidden="true" /></span><span className="snapshot-label">Opening estimate</span><strong>{park.hours}</strong><p>{park.hoursNote}</p><Link href="/visit">Visitor estimates <ArrowRight size={15} aria-hidden="true" /></Link></article>
-            <article className="snapshot-card snapshot-prices"><span className="snapshot-icon"><CircleDollarSign size={21} aria-hidden="true" /></span><span className="snapshot-label">Entrance estimate</span><strong>R70–R120 child</strong><p>Adult R80–R150; under 2 R0–R50.</p><Link href="/prices">View budget ranges <ArrowRight size={15} aria-hidden="true" /></Link></article>
-            <article className="snapshot-card snapshot-bookings"><span className="snapshot-icon"><CalendarDays size={21} aria-hidden="true" /></span><span className="snapshot-label">Groups &amp; lapas</span><strong>Allow 3–7 days</strong><p>Estimated lead time for organised visits and lapa requests.</p><Link href="/parties">Explore group visits <ArrowRight size={15} aria-hidden="true" /></Link></article>
+            <article className="snapshot-card snapshot-hours"><div className="snapshot-card-top"><span className="snapshot-icon"><Clock3 size={21} aria-hidden="true" /></span><span className="snapshot-card-number">01</span></div><span className="snapshot-label">Opening hours</span><strong>{park.hours}</strong><p>{park.hoursNote}</p><Link href="/visit">Visitor guidance <ArrowRight size={15} aria-hidden="true" /></Link></article>
+            <article className="snapshot-card snapshot-prices"><div className="snapshot-card-top"><span className="snapshot-icon"><CircleDollarSign size={21} aria-hidden="true" /></span><span className="snapshot-card-number">02</span></div><span className="snapshot-label">Entrance rates</span><strong>R70–R120 child</strong><p>Adult R80–R150; under 2 R0–R50.</p><Link href="/prices">View rate categories <ArrowRight size={15} aria-hidden="true" /></Link></article>
+            <article className="snapshot-card snapshot-bookings"><div className="snapshot-card-top"><span className="snapshot-icon"><CalendarDays size={21} aria-hidden="true" /></span><span className="snapshot-card-number">03</span></div><span className="snapshot-label">Groups &amp; lapas</span><strong>Allow 3–7 days</strong><p>Typical lead time for organised visits and lapa requests.</p><Link href="/parties">Explore group visits <ArrowRight size={15} aria-hidden="true" /></Link></article>
           </div>
         </section>
 
@@ -76,7 +96,7 @@ export default function Home() {
 
         <section className="section section-celebrations">
           <div className="celebration-art" aria-hidden="true"><div className="celebration-ring"><span>Make it<br />a party</span></div><span className="celebration-dot dot-a" /><span className="celebration-dot dot-b" /><span className="celebration-dot dot-c" /></div>
-          <div className="celebration-copy"><span className="eyebrow eyebrow-blue">Good days are better together</span><h2>Big days.<br /><span>Even bigger splashes.</span></h2><p>Planning a birthday, school outing or group visit? Use the per-person estimates and allow 3–7 days for a request. An enquiry is not a booking.</p><div className="hero-actions"><Link className="button button-primary" href="/parties">Explore parties &amp; groups <ArrowRight size={18} aria-hidden="true" /></Link><a className="text-link" href={park.whatsappHref} target="_blank" rel="noreferrer">WhatsApp our team <ArrowUpRight size={16} aria-hidden="true" /></a></div></div>
+          <div className="celebration-copy"><span className="eyebrow eyebrow-blue">Good days are better together</span><h2>Big days.<br /><span>Even bigger splashes.</span></h2><p>Planning a birthday, school outing or group visit? Use the per-person guidance and allow 3–7 days for a request. An enquiry is not a booking.</p><div className="hero-actions"><Link className="button button-primary" href="/parties">Explore parties &amp; groups <ArrowRight size={18} aria-hidden="true" /></Link><a className="text-link" href={park.whatsappHref} target="_blank" rel="noreferrer">WhatsApp our team <ArrowUpRight size={16} aria-hidden="true" /></a></div></div>
         </section>
 
         <section className="section gallery-preview-section">

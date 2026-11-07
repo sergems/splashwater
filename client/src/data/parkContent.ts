@@ -8,8 +8,8 @@ export const park = {
   email: "info@splashKidsWaterpark.co.za",
   emailHref: "mailto:info@splashKidsWaterpark.co.za",
   facebookUrl: "https://www.facebook.com/people/Splash-Kids-Waterpark/61595927306788/",
-  hours: "Estimated: weekends & school/public holidays, 09:00–17:00",
-  hoursNote: "Weekday opening is treated as by arrangement in this planning estimate.",
+  hours: "Weekends & school/public holidays, 09:00–17:00",
+  hoursNote: "Weekday opening is treated as by arrangement in this planning note.",
   mapSearchUrl:
     "https://www.google.com/maps/search/?api=1&query=Block+C%2C+eMondlo%2FVryheid+Road%2C+eMondlo%2C+3105%2C+KwaZulu-Natal%2C+South+Africa",
   mapEmbedUrl:
@@ -27,7 +27,7 @@ export const listedAttractions = [
       width: 1400,
       height: 933,
     },
-    restriction: "Cautious estimate: keep non-swimmers within arm’s reach of a responsible adult. Pool depths and numeric age limits are not estimated.",
+    restriction: "Safety note: keep non-swimmers within arm’s reach of a responsible adult. Pool depths and numeric age limits are not confirmed.",
   },
   {
     name: "Water slides",
@@ -39,7 +39,7 @@ export const listedAttractions = [
       width: 1400,
       height: 931,
     },
-    restriction: "Estimate: height, age or health limits may apply. Follow posted signs and staff instructions; no numeric cut-off is guessed.",
+    restriction: "Safety note: height, age or health limits may apply. Follow posted signs and staff instructions; no numeric cut-off is guessed.",
   },
   {
     name: "Trampolines",
@@ -51,7 +51,7 @@ export const listedAttractions = [
       width: 1400,
       height: 931,
     },
-    restriction: "Cautious estimate: use with close adult supervision, one jumper at a time, and stop if the enclosure or equipment appears damaged.",
+    restriction: "Safety note: use with close adult supervision, one jumper at a time, and stop if the enclosure or equipment appears damaged.",
   },
   {
     name: "Jumping castles",
@@ -63,7 +63,7 @@ export const listedAttractions = [
       width: 1400,
       height: 965,
     },
-    restriction: "Cautious estimate: remove shoes and supervise children nearby. Capacity and age limits are not estimated; follow any posted instructions.",
+    restriction: "Safety note: remove shoes and supervise children nearby. Capacity and age limits are not confirmed; follow any posted instructions.",
   },
   {
     name: "Jungle gyms",
@@ -75,7 +75,7 @@ export const listedAttractions = [
       width: 1400,
       height: 933,
     },
-    restriction: "Cautious estimate: use age-appropriate equipment with an adult close by; no age, height or capacity number is guessed.",
+    restriction: "Safety note: use age-appropriate equipment with an adult close by; no age, height or capacity number is guessed.",
   },
   {
     name: "Children’s play area",
@@ -87,7 +87,7 @@ export const listedAttractions = [
       width: 1400,
       height: 933,
     },
-    restriction: "Planning estimate: expect a family play area with adult supervision; the specific equipment and suitable ages may vary.",
+    restriction: "Planning note: expect a family play area with adult supervision; the specific equipment and suitable ages may vary.",
   },
   {
     name: "Gardens",
@@ -99,7 +99,7 @@ export const listedAttractions = [
       width: 1400,
       height: 933,
     },
-    restriction: "Planning estimate: garden areas are part of a regular visit; private event use is not included in the visit budget.",
+    restriction: "Planning note: garden areas are part of a regular visit; private event use is not included in the visit budget.",
   },
   {
     name: "Picnic & braai areas",
@@ -111,7 +111,7 @@ export const listedAttractions = [
       width: 1400,
       height: 932,
     },
-    restriction: "The supplied information allows visitors to bring food and coolerboxes at no extra charge. Cautious estimate: use only designated braai spaces and follow staff fire-safety instructions.",
+    restriction: "The supplied information allows visitors to bring food and coolerboxes at no extra charge. Safety note: use only designated braai spaces and follow staff fire-safety instructions.",
   },
   {
     name: "Lapas & benches",
@@ -123,7 +123,7 @@ export const listedAttractions = [
       width: 1400,
       height: 933,
     },
-    restriction: "Planning estimate: request a lapa 3–7 days ahead and budget R150–R600 per booking. Capacity and exact inclusions are not estimated.",
+    restriction: "Planning note: request a lapa 3–7 days ahead and budget R150–R600 per booking. Capacity and exact inclusions are not confirmed.",
   },
 ] as const;
 
@@ -134,69 +134,69 @@ export const listedFacilities = [
   "Gardens and outdoor areas",
   "Picnic and braai areas",
   "Benches",
-  "Lapas listed for advance booking; budget estimate R150–R600 per booking",
+  "Lapas listed for advance booking; budget range R150–R600 per booking",
 ] as const;
 
-export const facilityPlanningEstimates = [
+export const facilityPlanningNotes = [
   "Parking: budget R0–R50 per vehicle; spaces may be limited.",
   "Toilets, showers and changing rooms: plan to bring towels and spare clothes; do not rely on showers or changing facilities.",
-  "Lockers and secure storage: no locker access is included in this estimate; keep valuables with you.",
+  "Lockers and secure storage: no locker access is included in this planning information; keep valuables with you.",
   "On-site food sales: no purchase is included in the budget. Bring meals and snacks; coolerboxes are welcome at no extra charge according to the supplied information.",
   "Shade and parent seating: assume limited shaded seating and bring hats or sun protection.",
   "First aid and accessibility: do not rely on a dedicated first-aid service or step-free amenities; contact the team to plan around individual needs.",
 ] as const;
 
-export const visitorPlanningEstimates = [
-  "Opening schedule — estimate: likely weekends and school/public holidays, 09:00–17:00; weekday opening is treated as by arrangement.",
-  "Admission — estimate: children R70–R120 (assuming ages 2–12), adults R80–R150, and under 2s R0–R50 per visit.",
-  "Payment — planning assumption: tickets are paid in person; carry cash and a bank card because the accepted methods are not included in the estimate.",
-  "Walk-ins and capacity — estimate: individual walk-ins may be available on open days; busy dates can fill up, so request groups and lapas 3–7 days ahead.",
-  "Parking — estimate R0–R50 per vehicle; allow for limited spaces and use the supplied address as an approximate location.",
+export const visitorPlanningNotes = [
+  "Opening schedule — note: likely weekends and school/public holidays, 09:00–17:00; weekday opening is treated as by arrangement.",
+  "Admission — rates: children R70–R120 (assuming ages 2–12), adults R80–R150, and under 2s R0–R50 per visit.",
+  "Payment — planning assumption: tickets are paid in person; carry cash and a bank card because the accepted methods are not included in the supplied payment information.",
+  "Walk-ins and capacity — note: individual walk-ins may be available on open days; busy dates can fill up, so request groups and lapas 3–7 days ahead.",
+  "Parking — budget range R0–R50 per vehicle; allow for limited spaces and use the supplied address as an approximate location.",
   "Food — supplied information allows visitors to bring meals, snacks and coolerboxes at no extra charge; plan as if no food outlet is available.",
-  "Swimwear — planning estimate: bring standard swimwear, towels, sandals and a change of clothes; slide-specific attire may differ.",
-  "Showers, changing rooms and lockers — conservative estimate: do not rely on these being available; pack what your family needs for changing and valuables.",
+  "Swimwear — planning note: bring standard swimwear, towels, sandals and a change of clothes; slide-specific attire may differ.",
+  "Showers, changing rooms and lockers — conservative note: do not rely on these being available; pack what your family needs for changing and valuables.",
   "Weather and ticket changes — outdoor activities may pause or close in severe weather. Budget conservatively as if tickets are not refundable unless written terms say otherwise; statutory consumer rights still apply.",
 ] as const;
 
-export const priceEstimates = [
+export const priceCategories = [
   {
     category: "Child admission",
-    estimate: "R70–R120 per child / visit",
-    details: "Budgeting assumption: ages 2–12. The age band is an estimate, not a Splash Kids ticket rule.",
+    price: "R70–R120 per child / visit",
+    details: "Budgeting assumption: ages 2–12. The age band is a planning reference, not a Splash Kids ticket rule.",
   },
   {
     category: "Adult admission",
-    estimate: "R80–R150 per adult / visit",
+    price: "R80–R150 per adult / visit",
     details: "Planning range for a full family day; the final rate and activities included may differ.",
   },
   {
     category: "Toddler or age-based admission",
-    estimate: "R0–R50 under age 2; R70–R120 ages 2–12",
-    details: "Age categories are budgeting assumptions only. No attraction age or height restriction is estimated.",
+    price: "R0–R50 under age 2; R70–R120 ages 2–12",
+    details: "Age categories are budgeting assumptions only. No attraction age or height restriction is confirmed.",
   },
   {
     category: "Family of four",
-    estimate: "R300–R540 for 2 adults + 2 children",
-    details: "Calculated from the estimated per-person rates; no family discount is assumed.",
+    price: "R300–R540 for 2 adults + 2 children",
+    details: "Calculated from the indicative per-person rates; no family discount is assumed.",
   },
   {
     category: "School and organised group visits",
-    estimate: "R70–R120 per child; R80–R150 per adult",
+    price: "R70–R120 per child; R80–R150 per adult",
     details: "No group discount is assumed. Request group arrangements 3–7 days ahead; transport and catering are not included.",
   },
   {
     category: "Birthday and celebration visits",
-    estimate: "R70–R120 per child for entry, plus a lapa estimate of R150–R600",
+    price: "R70–R120 per child for entry, plus a lapa rate of R150–R600",
     details: "Working budget only; catering, cake, décor and exclusive-use options are not included.",
   },
   {
     category: "Seasonal or promotional offers",
-    estimate: "0% discount assumed",
-    details: "Budget at standard estimated admission; no promotion or group concession is assumed.",
+    price: "0% discount assumed",
+    details: "Budget at standard indicative admission; no promotion or group concession is assumed.",
   },
   {
     category: "Additional activities or bookable facilities",
-    estimate: "Lapa booking R150–R600; other add-ons not budgeted",
+    price: "Lapa booking R150–R600; other add-ons not budgeted",
     details: "The lapa range is a broad working allowance, not an observed Splash Kids fee. Do not assume other extras are included or free.",
   },
 ] as const;
@@ -216,27 +216,27 @@ export const faqs = [
   },
   {
     question: "What are the opening hours?",
-    answer: "Planning estimate: likely weekends and school/public holidays, around 09:00–17:00; weekday opening is treated as by arrangement. Contact the team for the day's schedule before setting off.",
+    answer: "Planning note: likely weekends and school/public holidays, around 09:00–17:00; weekday opening is treated as by arrangement. Contact the team for the day's schedule before setting off.",
   },
   {
     question: "How much is entrance?",
-    answer: "Budget estimate: R70–R120 per child, R80–R150 per adult and R0–R50 for a child under 2. These are comparison-based planning ranges, not Splash Kids prices or a booking quote.",
+    answer: "Rate guide: R70–R120 per child, R80–R150 per adult and R0–R50 for a child under 2. These are comparison-based planning ranges, not Splash Kids prices or a booking quote.",
   },
   {
     question: "What ages can visit?",
-    answer: "Splash Kids is described as a family and children’s park. For budgeting only, the child-ticket estimate assumes ages 2–12 and the toddler estimate assumes under 2. Numeric attraction age, height or health limits are not guessed; follow signs and staff guidance.",
+    answer: "Splash Kids is described as a family and children’s park. For budgeting only, the child-ticket reference uses ages 2–12 and the toddler reference uses under 2. Numeric attraction age, height or health limits are not guessed; follow signs and staff guidance.",
   },
   {
     question: "Do adults pay?",
-    answer: "Yes, include adults in the budget: the estimate is R80–R150 per adult. A family-of-four estimate is R300–R540 for two adults and two children, with no discount assumed.",
+    answer: "Yes, include adults in the budget: the listed rate is R80–R150 per adult. A family-of-four total is R300–R540 for two adults and two children, with no discount assumed.",
   },
   {
     question: "Can parents accompany children?",
-    answer: "Parents and guardians should supervise children throughout the visit. Planning assumption: keep a responsible adult with each family group and within arm’s reach of children who cannot swim; no park-specific supervision ratio is estimated.",
+    answer: "Parents and guardians should supervise children throughout the visit. Planning assumption: keep a responsible adult with each family group and within arm’s reach of children who cannot swim; no park-specific supervision ratio is confirmed.",
   },
   {
     question: "Are swimming costumes compulsory?",
-    answer: "Planning estimate: bring standard swimwear, towels, sandals and spare clothes. Follow any pool or slide signs; exact attire rules are not guessed.",
+    answer: "Planning note: bring standard swimwear, towels, sandals and spare clothes. Follow any pool or slide signs; exact attire rules are not guessed.",
   },
   {
     question: "Can visitors bring food?",
@@ -248,15 +248,15 @@ export const faqs = [
   },
   {
     question: "Can visitors bring birthday cakes?",
-    answer: "Planning assumption: bring a cake if needed and request a celebration 3–7 days ahead. No catering, décor or cake service is included in the budget estimate.",
+    answer: "Planning assumption: bring a cake if needed and request a celebration 3–7 days ahead. No catering, décor or cake service is included in the budget guide.",
   },
   {
     question: "Is advance booking needed?",
-    answer: "Planning estimate: individual visits may be walk-ins on open days, subject to capacity. Request a lapa or organised group 3–7 days ahead; an enquiry does not reserve a date.",
+    answer: "Planning note: individual visits may be walk-ins on open days, subject to capacity. Request a lapa or organised group 3–7 days ahead; an enquiry does not reserve a date.",
   },
   {
     question: "Is parking available?",
-    answer: "Budget R0–R50 per vehicle as a parking estimate. Spaces may be limited; the address search is an approximate location rather than a gate pin.",
+    answer: "Budget R0–R50 per vehicle as a parking guide. Spaces may be limited; the address search is an approximate location rather than a gate pin.",
   },
   {
     question: "What happens if it rains?",
@@ -264,11 +264,11 @@ export const faqs = [
   },
   {
     question: "Are toddler facilities available?",
-    answer: "A separate toddler splash zone is not included in the planning estimate. Use only the listed activities that signs and staff indicate are suitable for your child, with close adult supervision.",
+    answer: "A separate toddler splash zone is not included in the planning note. Use only the listed activities that signs and staff indicate are suitable for your child, with close adult supervision.",
   },
   {
     question: "Can schools and groups book?",
-    answer: "Group enquiries are welcome. Planning estimate: R70–R120 per child and R80–R150 per adult, with no group discount assumed; request a date 3–7 days ahead. An enquiry is not a confirmed booking.",
+    answer: "Group enquiries are welcome. Planning note: R70–R120 per child and R80–R150 per adult, with no group discount assumed; request a date 3–7 days ahead. An enquiry is not a confirmed booking.",
   },
   {
     question: "Who should visitors contact in an emergency?",
@@ -276,15 +276,15 @@ export const faqs = [
   },
 ] as const;
 
-export const safetyPlanningEstimates = [
+export const safetyPlanningNotes = [
   "Water supervision — plan for a responsible adult to remain within arm’s reach of any child who cannot swim; no lifeguard coverage is assumed.",
-  "Attraction limits — numeric age, height, weight, depth and capacity limits are not estimated. Follow current signs and staff instructions; do not use equipment if a rule is unclear.",
+  "Attraction limits — numeric age, height, weight, depth and capacity limits are not confirmed. Follow current signs and staff instructions; do not use equipment if a rule is unclear.",
   "Swimming ability and attire — treat a non-swimmer as needing close adult supervision; bring standard swimwear and follow posted pool attire instructions.",
-  "Play equipment — conservative estimate: close adult supervision, one jumper at a time on a trampoline, and shoes off on an inflatable castle; use equipment only when staff indicate it is open.",
+  "Play equipment — conservative note: close adult supervision, one jumper at a time on a trampoline, and shoes off on an inflatable castle; use equipment only when staff indicate it is open.",
   "First aid and incidents — do not rely on an on-site medical professional being present. Carry essential medication, alert staff to hazards, and contact emergency services for immediate danger.",
   "Lost children — choose a family meeting point when you arrive; no designated park meeting point is assumed.",
   "Weather — expect outdoor activities to pause or close during lightning or severe weather. Budget as if a closure does not automatically create a refund, while retaining all applicable consumer rights.",
   "Medical and accessibility needs — plan for no dedicated accessibility or medical support unless the park says otherwise; contact the team before visiting and bring any essential supplies.",
-  "Food, braai and restricted items — bring food and coolerboxes as supplied information allows; use only designated braai spaces and follow staff fire-safety instructions. No glass, alcohol or smoking policy is estimated.",
+  "Food, braai and restricted items — bring food and coolerboxes as supplied information allows; use only designated braai spaces and follow staff fire-safety instructions. No glass, alcohol or smoking policy is guided.",
   "Hygiene and damaged equipment — use facilities only as directed, avoid rough play on wet surfaces, and stop using equipment that appears damaged; notify staff.",
 ] as const;

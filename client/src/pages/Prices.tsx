@@ -2,19 +2,9 @@ import { ArrowRight, CalendarDays, CircleDollarSign, Ticket, Users } from "lucid
 import { Link } from "wouter";
 import PageHero from "@/components/PageHero";
 import SiteLayout from "@/components/SiteLayout";
-import { park, priceEstimates } from "@/data/parkContent";
+import { park, priceCategories } from "@/data/parkContent";
 
-const admissionCategories = new Set([
-  "Child admission",
-  "Adult admission",
-  "Toddler or age-based admission",
-]);
-
-const admissionEstimates = priceEstimates.filter((item) => admissionCategories.has(item.category));
-const familyEstimate = priceEstimates.find((item) => item.category === "Family of four");
-const additionalEstimates = priceEstimates.filter(
-  (item) => !admissionCategories.has(item.category) && item.category !== "Family of four",
-);
+const categoryIcons = [Ticket, Users, CalendarDays, CircleDollarSign];
 
 export default function Prices() {
   return (
@@ -22,8 +12,8 @@ export default function Prices() {
       <PageHero
         eyebrow="Entrance fees & packages"
         title="Plan a family budget."
-        accent="Estimated rates & extras."
-        description="Use these comparison-based ranges to plan a visit. They are not official Splash Kids prices, a current tariff or a booking quote."
+        accent="Rates by category."
+        description="Browse the listed entry, family, group and facility rates, then confirm today’s price and booking terms with the Splash Kids team."
         actions={
           <a className="button button-primary" href={park.whatsappHref} target="_blank" rel="noreferrer">
             Ask for today’s rates <ArrowRight size={17} aria-hidden="true" />
@@ -31,88 +21,52 @@ export default function Prices() {
         }
       />
 
-      <section className="section price-page-section" aria-label="Entrance price estimates">
+      <section className="section price-page-section" aria-label="Rates by category">
         <div className="pricing-notice" role="note">
           <span className="pricing-notice-icon"><CircleDollarSign size={23} aria-hidden="true" /></span>
           <div>
-            <strong>Planning estimates only — not official Splash Kids prices</strong>
-            <p>Actual rates, inclusions and booking terms may differ. Contact the team for the current price before paying.</p>
+            <strong>Rate guide — confirm before paying</strong>
+            <p>Prices, inclusions and booking terms can change. Contact the team for the current rate before travelling or paying.</p>
           </div>
         </div>
 
-        <section className="price-admission-section" aria-labelledby="price-admission-heading">
-          <div className="price-section-heading">
-            <div>
-              <span className="eyebrow eyebrow-blue">A simple starting point</span>
-              <h2 id="price-admission-heading">Estimated admission</h2>
-              <p>Choose the closest fit for your family. Age bands and amounts are budgeting assumptions only.</p>
-            </div>
-            <span className="price-estimate-stamp">Nonbinding planning ranges</span>
+        <div className="price-list-heading">
+          <div>
+            <span className="eyebrow eyebrow-blue">Clear categories</span>
+            <h2>Rates at a glance.</h2>
+            <p>Use the list below to see the relevant category, rate and what it covers. Group arrangements, lapas and add-ons should be confirmed in advance.</p>
           </div>
+          <span className="price-list-count">{priceCategories.length} categories listed</span>
+        </div>
 
-          <div className="price-highlight-grid">
-            {admissionEstimates.map((item, index) => (
-              <article className={`price-highlight-card price-highlight-card--${index + 1}`} key={item.category}>
-                <div className="price-highlight-topline">
-                  <span className="price-highlight-icon"><Ticket size={19} aria-hidden="true" /></span>
-                  <span className="price-highlight-index">0{index + 1}</span>
-                </div>
-                <h3>{item.category}</h3>
-                <p className="price-highlight-amount">{item.estimate}</p>
-                <p className="price-highlight-details">{item.details}</p>
-                <span className="price-highlight-label">Estimated per visit</span>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        {familyEstimate && (
-          <aside className="price-family-banner" aria-labelledby="price-family-heading">
-            <div className="price-family-main">
-              <span className="price-family-icon"><Users size={21} aria-hidden="true" /></span>
-              <div>
-                <span className="price-family-kicker">Family of four estimate</span>
-                <h2 id="price-family-heading">{familyEstimate.estimate}</h2>
-              </div>
-            </div>
-            <div className="price-family-details">
-              <p>{familyEstimate.details} Catering, transport and extras are not included.</p>
-              <Link className="price-family-link" href="/parties">
-                Explore group & party visits <ArrowRight size={16} aria-hidden="true" />
-              </Link>
-            </div>
-          </aside>
-        )}
-
-        <section className="price-additional-section" aria-labelledby="price-additional-heading">
-          <div className="price-section-heading price-section-heading--additional">
-            <div>
-              <span className="eyebrow eyebrow-blue">Groups, celebrations & extras</span>
-              <h2 id="price-additional-heading">More to include in your budget</h2>
-              <p>These ranges do not imply that a package, discount or add-on is available.</p>
-            </div>
-          </div>
-
-          <div className="price-option-grid">
-            {additionalEstimates.map((item) => (
-              <article className="price-option-card" key={item.category}>
-                <span className="price-option-icon"><CircleDollarSign size={19} aria-hidden="true" /></span>
-                <div className="price-option-heading">
+        <div className="price-category-list" role="list">
+          {priceCategories.map((item, index) => {
+            const Icon = categoryIcons[index % categoryIcons.length];
+            return (
+              <article className={`price-category-row price-category-row--${(index % 4) + 1}`} key={item.category} role="listitem">
+                <span className="price-category-index">{String(index + 1).padStart(2, "0")}</span>
+                <span className="price-category-icon"><Icon size={20} aria-hidden="true" /></span>
+                <div className="price-category-copy">
+                  <span className="price-category-kicker">Category {String(index + 1).padStart(2, "0")}</span>
                   <h3>{item.category}</h3>
-                  <p className="price-option-amount">{item.estimate}</p>
+                  <p>{item.details}</p>
                 </div>
-                <p className="price-option-details">{item.details}</p>
+                <div className="price-category-value">
+                  <span>Listed rate</span>
+                  <strong>{item.price}</strong>
+                </div>
               </article>
-            ))}
-          </div>
-        </section>
+            );
+          })}
+        </div>
 
         <div className="price-closing-note" role="note">
           <span className="price-closing-icon"><CalendarDays size={20} aria-hidden="true" /></span>
           <div>
-            <strong>An estimate is not a reservation.</strong>
-            <p>Ask the team about current rates, dates and availability before travelling. An enquiry does not hold a booking.</p>
+            <strong>Confirm current rates and availability before travelling.</strong>
+            <p>An enquiry does not hold a booking. Ask the team about dates, group spaces, lapa requests and what is included.</p>
           </div>
+          <Link className="price-closing-link" href="/contact#enquiry">Contact the team <ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
       </section>
     </SiteLayout>
