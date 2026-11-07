@@ -61,9 +61,9 @@ export default function Home() {
         </section>
 
         <section className="section section-attractions" id="attractions">
-          <div className="section-heading"><span className="eyebrow eyebrow-blue">Make a day of it</span><h2>Water, play <span>&amp; wide-open smiles.</span></h2><p>Explore the activities in the supplied Splash Kids list. Safety guidance is conservative; follow current signs and staff directions.</p></div>
+          <div className="section-heading"><span className="eyebrow eyebrow-blue">Make a day of it</span><h2>Choose your <span>kind of splash.</span></h2><p>Nine optimized, licensed representative photos show similar activities—not photographs of Splash Kids Waterpark. Follow current signs and staff instructions.</p></div>
           <div className="home-attraction-grid">
-            {listedAttractions.slice(0, 6).map((item, index) => <Reveal key={item.name} className="home-attraction-card"><span className={`activity-index activity-index-${index + 1}`}>0{index + 1}</span><h3>{item.name}</h3><p>{item.description}</p><Link href="/attractions" aria-label={`Learn more about ${item.name}`}>Explore <ArrowRight size={15} aria-hidden="true" /></Link></Reveal>)}
+            {listedAttractions.map((item, index) => <Reveal key={item.name} className="home-attraction-card"><figure className="home-attraction-photo"><img src={item.photo.src} alt={item.photo.alt} width={item.photo.width} height={item.photo.height} loading="lazy" decoding="async" /><span className="home-activity-index" aria-hidden="true">0{index + 1}</span></figure><div className="home-attraction-content"><h3>{item.name}</h3><p>{item.description}</p><Link href="/attractions" aria-label={`Learn more about ${item.name}`}>Explore <ArrowRight size={15} aria-hidden="true" /></Link></div></Reveal>)}
           </div>
           <div className="section-link-row"><Link className="text-link" href="/attractions">See all attractions <ArrowRight size={17} aria-hidden="true" /></Link><Link className="text-link" href="/facilities">Explore facilities <ArrowRight size={17} aria-hidden="true" /></Link></div>
         </section>

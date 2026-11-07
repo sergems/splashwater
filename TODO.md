@@ -107,3 +107,7 @@
 - [x] Document Git-integrated Pages settings for `sergems/splashwater`, production branch `main`, build command `pnpm run build:static`, output directory `dist/public`, Node.js `22.23.4` and pnpm `10.18.0`; keep the site static with no required server, database or runtime secrets.
 - [x] Preserve route-specific static HTML and SEO metadata for all 13 public pages. Explain that the public origin/custom domain must be chosen before adding canonical URLs or a sitemap; this preparation does not create or publish a Cloudflare Pages project.
 - [x] Add a branded root-level `404.html` so unknown paths return a real 404 response instead of the Pages single-page-app fallback to Home; include clear links back to the site and contact details.
+
+
+## Home-page activity photography
+- [x] Use the same nine optimized, licensed representative activity photos already used on Attractions/Gallery in the Home page’s “Choose your kind of splash” section. Keep descriptive alt text, responsive images and a clear note that these photos are representative, not photos of the Splash Kids venue; do not download or create replacement images.

@@ -138,15 +138,17 @@ p { margin: 0; }
 .snapshot-hours { border-top: 4px solid var(--aqua); }
 .snapshot-prices { border-top: 4px solid var(--sun); }
 .snapshot-bookings { border-top: 4px solid var(--coral); }
-.home-attraction-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
-.home-attraction-card { min-height: 196px; padding: 23px 22px; border: 1px solid var(--line); border-radius: 17px; background: #fff; transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
-.home-attraction-card:hover { transform: translateY(-3px); border-color: #aacfd8; box-shadow: 0 14px 28px rgba(24,57,77,.07); }
-.activity-index { display: inline-block; margin-bottom: 20px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .08em; }
-.activity-index-2,.activity-index-5 { color: #c65f55; }
-.activity-index-3,.activity-index-6 { color: #9a6a00; }
-.home-attraction-card h3 { font-size: 19px; }
-.home-attraction-card p { margin-top: 9px; color: var(--muted); font-size: 14px; }
-.home-attraction-card a { margin-top: 15px; display: inline-flex; align-items: center; gap: 6px; color: var(--blue); font-size: 13px; font-weight: 800; text-decoration: none; }
+.home-attraction-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 17px; align-items: start; }
+.home-attraction-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 19px; background: #fff; box-shadow: 0 10px 28px rgba(24,57,77,.05); transition: transform .2s ease, box-shadow .2s ease; }
+.home-attraction-card:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(24,57,77,.1); }
+.home-attraction-photo { position: relative; aspect-ratio: 3 / 2; margin: 0; overflow: hidden; background: var(--aqua-soft); }
+.home-attraction-photo img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.home-attraction-card:hover .home-attraction-photo img { transform: scale(1.035); }
+.home-activity-index { position: absolute; top: 13px; left: 13px; width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.72); border-radius: 50%; color: #fff; background: rgba(18,60,86,.83); font-size: 12px; font-weight: 800; letter-spacing: .05em; backdrop-filter: blur(8px); }
+.home-attraction-content { padding: 18px 20px 20px; }
+.home-attraction-content h3 { font-size: 19px; }
+.home-attraction-content p { margin-top: 9px; color: var(--muted); font-size: 14px; }
+.home-attraction-content a { margin-top: 15px; display: inline-flex; align-items: center; gap: 6px; color: var(--blue); font-size: 13px; font-weight: 800; text-decoration: none; }
 .section-link-row { display: flex; gap: 24px; margin-top: 25px; }
 .family-food-section { position: relative; isolation: isolate; padding: 70px max(38px, calc((100vw - 1190px) / 2)); display: grid; grid-template-columns: 1fr .9fr; gap: 65px; overflow: hidden; color: #fff; background: var(--navy); }
 .family-food-copy { max-width: 560px; }
@@ -571,9 +573,11 @@ p { margin: 0; }
   .section-heading > p { font-size: 14px; }
   .section-heading-split { display: block; }
   .section-heading-split > p { margin-top: 12px; }
-  .visit-snapshot-grid, .home-attraction-grid, .attraction-grid, .gallery-category-grid { grid-template-columns: 1fr; }
+  .visit-snapshot-grid, .attraction-grid, .gallery-category-grid { grid-template-columns: 1fr; }
+  .home-attraction-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
   .snapshot-card { min-height: 0; }
-  .home-attraction-card { min-height: 0; }
+  .home-attraction-content { padding: 15px; }
+  .home-attraction-content h3 { font-size: 17px; }
   .section-link-row { flex-direction: column; gap: 12px; }
   .family-food-section { padding: 54px 22px; grid-template-columns: 1fr; gap: 24px; }
   .family-food-copy h2 { font-size: 38px; }
