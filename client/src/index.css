@@ -649,8 +649,8 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.035em; }
   display: block;
   width: 100%;
   max-width: none;
-  height: clamp(680px, calc(100svh - 108px), 820px);
-  min-height: 680px;
+  height: clamp(620px, calc(100svh - 245px), 720px);
+  min-height: 620px;
   margin: 0 auto;
   padding: 0 22px 25px;
   overflow: hidden;
@@ -749,7 +749,7 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.035em; }
 }
 .quick-strip div { font-size: 13px; }
 @media (max-width: 760px) {
-  .hero-section { height: clamp(700px, calc(100svh - 100px), 770px); min-height: 700px; padding: 0 13px 18px; }
+  .hero-section { height: clamp(620px, calc(100svh - 150px), 700px); min-height: 620px; padding: 0 13px 18px; }
   .hero-copy {
     top: 47%;
     left: 50%;

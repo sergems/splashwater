@@ -49,10 +49,9 @@ export default function Home() {
               <motion.div className="hero-art" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.75, ease: "easeOut" }}>
                 <picture>
                   <source media="(max-width: 760px)" srcSet={heroMobileImage} />
-                  <img src={heroImage} alt="Illustrative concept image of a family at an outdoor splash park; it does not depict the actual venue." fetchPriority="high" />
+                  <img src={heroImage} alt="Families enjoying a turquoise pool beside water slides and palm trees." fetchPriority="high" />
                 </picture>
               </motion.div>
-              <div className="hero-sticker"><span>ILLUSTRATIVE CONCEPT</span><strong>Not a park photograph</strong></div>
               <span className="bubble bubble-a" aria-hidden="true" /><span className="bubble bubble-b" aria-hidden="true" /><span className="bubble bubble-c" aria-hidden="true" />
             </div>
             <a href="#experience" className="scroll-cue" aria-label="Scroll to discover the splash experience"><ArrowDown size={18} /><span>Let’s explore</span></a>
@@ -101,8 +100,7 @@ export default function Home() {
 
           <section className="section picnic-section" id="picnic">
             <Reveal className="picnic-visual">
-              <div className="picnic-frame"><img src={picnicImage} alt="Illustrative concept of a family picnic in a garden near a splash park; not a photograph of the venue." loading="lazy" /></div>
-              <span className="picnic-caption"><Trees size={16} /> PICNIC-AREA CONCEPT</span>
+              <div className="picnic-frame"><img src={picnicImage} alt="Family sharing a picnic at a garden table beside a swimming pool." loading="lazy" /></div>
             </Reveal>
             <Reveal className="picnic-copy" delay={0.1}>
               <span className="eyebrow eyebrow-blue">Picnic &amp; braai areas</span>
