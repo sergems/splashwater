@@ -22,7 +22,7 @@ export const listedAttractions = [
     description: "Take a break from the heat and enjoy time in the water with your family.",
     icon: "waves",
     photo: {
-      src: "/manus-storage/swimming-pools_98b388fe.webp",
+      src: "/images/activities/swimming-pools.webp",
       alt: "An empty outdoor swimming pool with clear blue water, surrounded by stone paving, lounge chairs, blue umbrellas, flowers and trees.",
       width: 1400,
       height: 933,
@@ -34,7 +34,7 @@ export const listedAttractions = [
     description: "Add a little speed and a big splash to your day at the park.",
     icon: "slide",
     photo: {
-      src: "/manus-storage/water-slides_769b857d.webp",
+      src: "/images/activities/water-slides.webp",
       alt: "Colorful water slides rise above bright blue pools at a water park under a clear sky.",
       width: 1400,
       height: 931,
@@ -46,7 +46,7 @@ export const listedAttractions = [
     description: "A place for active play and high-energy fun.",
     icon: "activity",
     photo: {
-      src: "/manus-storage/trampolines_a76ed03d.webp",
+      src: "/images/activities/trampolines.webp",
       alt: "A red-and-blue round trampoline with a black safety enclosure net in a grassy backyard, with trees and a house behind it.",
       width: 1400,
       height: 931,
@@ -58,7 +58,7 @@ export const listedAttractions = [
     description: "Enjoy bouncing play as part of a family day out.",
     icon: "castle",
     photo: {
-      src: "/manus-storage/jumping-castles_73214163.webp",
+      src: "/images/activities/jumping-castles.webp",
       alt: "Children climbing inside a large yellow inflatable bounce castle outdoors.",
       width: 1400,
       height: 965,
@@ -70,7 +70,7 @@ export const listedAttractions = [
     description: "Outdoor climbing and play for children to explore.",
     icon: "climb",
     photo: {
-      src: "/manus-storage/jungle-gyms_fc780c6b.webp",
+      src: "/images/activities/jungle-gyms.webp",
       alt: "An empty rope-net climbing structure in an outdoor playground.",
       width: 1400,
       height: 933,
@@ -82,7 +82,7 @@ export const listedAttractions = [
     description: "A children’s play space is included in the supplied activity list.",
     icon: "child",
     photo: {
-      src: "/manus-storage/childrens-play-area_c7569bfb.webp",
+      src: "/images/activities/childrens-play-area.webp",
       alt: "An outdoor playground with a blue slide, play structure and swings, surrounded by trees on an autumn day.",
       width: 1400,
       height: 933,
@@ -94,7 +94,7 @@ export const listedAttractions = [
     description: "Open-air green space to enjoy during a family visit.",
     icon: "garden",
     photo: {
-      src: "/manus-storage/gardens_9de6516c.webp",
+      src: "/images/activities/gardens.webp",
       alt: "A landscaped park garden with a broad green lawn, trees, flower beds and paved paths.",
       width: 1400,
       height: 933,
@@ -106,7 +106,7 @@ export const listedAttractions = [
     description: "Bring your own food and make time to sit down together.",
     icon: "food",
     photo: {
-      src: "/manus-storage/picnic-braai_081506a4.webp",
+      src: "/images/activities/picnic-braai.webp",
       alt: "An empty wooden picnic table beneath a large tree on a grassy lawn, with a kettle braai nearby.",
       width: 1400,
       height: 932,
@@ -118,7 +118,7 @@ export const listedAttractions = [
     description: "Benches are listed; lapas can be requested in advance.",
     icon: "shade",
     photo: {
-      src: "/manus-storage/lapas-benches_b3ddf23c.webp",
+      src: "/images/activities/lapas-benches.webp",
       alt: "An open-sided timber shelter with long built-in wooden seating, surrounded by leafy greenery.",
       width: 1400,
       height: 933,

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { ChevronDown, Menu, X } from "lucide-react";
 
-const logo = "/manus-storage/splash-kids-logo_1a88b93f.webp";
+const logo = "/images/brand/splash-kids-logo.webp";
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);

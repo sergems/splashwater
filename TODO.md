@@ -100,3 +100,10 @@
 > Visual reference supplied by the owner: [ZIMIH Wonder Co](https://zimihwonderco.co.za/) showed white navigation, a centered hero, navy type with lilac/pink highlights, soft pastel spots, rounded calls to action, compact service cards and generous spacing. Use these only as high-level cues; no reference-site copy or assets were reused.
 >
 > Authentic-media/source check (7 Nov 2026): the public [Splash Kids Waterpark Facebook page](https://www.facebook.com/people/Splash-Kids-Waterpark/61595927306788/) was announced as a new page in this [owner announcement](https://www.facebook.com/siphiwe.buthelezi/posts/please-like-and-follow-our-new-facebook-page-splash-kids-waterpark-great-place-w/39779368998343240/), but accessible page/photo content did not expose a verifiable venue photo. That Facebook page lists +27 81 091 2877, which conflicts with the user’s brief; retain +27 64 820 0293 until management confirms a change. [De Volpe](https://www.devolpe.co.za/) identifies itself as a wedding venue, so its images are not Splash Kids venue media.
+
+
+## Cloudflare Pages deployment preparation
+- [x] Make the public site portable outside Manus by moving every visitor-visible logo and activity photo from `/manus-storage/` into versioned files under `client/public/`; keep all nine optimized photos and source/license details in the repository.
+- [x] Document Git-integrated Pages settings for `sergems/splashwater`, production branch `main`, build command `pnpm run build:static`, output directory `dist/public`, Node.js `22.23.4` and pnpm `10.18.0`; keep the site static with no required server, database or runtime secrets.
+- [x] Preserve route-specific static HTML and SEO metadata for all 13 public pages. Explain that the public origin/custom domain must be chosen before adding canonical URLs or a sitemap; this preparation does not create or publish a Cloudflare Pages project.
+- [x] Add a branded root-level `404.html` so unknown paths return a real 404 response instead of the Pages single-page-app fallback to Home; include clear links back to the site and contact details.

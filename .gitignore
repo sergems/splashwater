@@ -101,6 +101,7 @@ jspm_packages/
 tmp/
 temp/
 .source-images/
+.wrangler/
 
 # Database
 *.db

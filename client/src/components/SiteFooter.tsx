@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { ArrowUpRight, Facebook, Mail, MapPin, Phone, Waves } from "lucide-react";
 import { park } from "@/data/parkContent";
 
-const logo = "/manus-storage/splash-kids-logo_1a88b93f.webp";
+const logo = "/images/brand/splash-kids-logo.webp";
 
 export default function SiteFooter() {
   return (

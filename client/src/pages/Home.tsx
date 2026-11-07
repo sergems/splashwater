@@ -5,7 +5,7 @@ import MapPanel from "@/components/MapPanel";
 import SiteLayout from "@/components/SiteLayout";
 import { listedAttractions, park } from "@/data/parkContent";
 
-const logo = "/manus-storage/splash-kids-logo_1a88b93f.webp";
+const logo = "/images/brand/splash-kids-logo.webp";
 const quickActivities = [
   { icon: Waves, label: "Pools & water slides", href: "/attractions" },
   { icon: Activity, label: "Play & adventure", href: "/attractions" },

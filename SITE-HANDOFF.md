@@ -1,44 +1,35 @@
 # Splash Kids Waterpark — Website Handoff
 
-**Status:** The 13-page responsive site is implemented in the current Webdev project, builds as a static site and is available in Preview. It has not been approved for public launch. The public site now uses clearly labeled, nonbinding planning estimates for hours, prices, visitor arrangements, parking and facilities. Replace these with owner-approved details before they are treated as official park information.
+**Status:** The 13-page responsive site is prepared for static Cloudflare Pages hosting but has not been deployed. The site uses nonbinding planning estimates for hours, prices, visitor arrangements, parking and facilities; replace these with owner-approved details before presenting them as official park information.
 
 ## Delivered structure
 
-The public pages are Home (`/`), About (`/about`), Attractions (`/attractions`), Visitor Information (`/visit`), Entrance Fees (`/prices`), Parties & Groups (`/parties`), Safety (`/safety`), Facilities (`/facilities`), Gallery (`/gallery`), FAQs (`/faqs`), Contact (`/contact`), Terms & Conditions (`/terms`) and Privacy (`/privacy`). The Gallery now contains nine licensed representative activity photos and discloses that they are not photos of the Splash Kids venue. Route-specific page HTML and metadata are generated during the static build; the route manifest is at `client/public/manus-routes.json`.
+The public pages are Home (`/`), About (`/about`), Attractions (`/attractions`), Visitor Information (`/visit`), Entrance Fees (`/prices`), Parties & Groups (`/parties`), Safety (`/safety`), Facilities (`/facilities`), Gallery (`/gallery`), FAQs (`/faqs`), Contact (`/contact`), Terms & Conditions (`/terms`) and Privacy (`/privacy`). The Gallery contains nine licensed representative activity photos and discloses that they are not photos of the Splash Kids venue. Route-specific page HTML and metadata are generated during the static build; the route manifest is at `client/public/manus-routes.json`. A branded root-level `404.html` is included so Cloudflare Pages can return a not-found response instead of falling back to Home for unknown paths.
 
-The site uses the supplied Splash Kids logo, includes an official Facebook-page link, provides click-to-call/WhatsApp/email/directions actions, and labels public visit ranges as planning estimates rather than official tariffs or policies. Photographer and stock-site credit captions are not displayed on the activity photos; their source and license details remain in `PHOTO-SOURCES.md`. The enquiry form only prepares a WhatsApp message on the visitor’s device. The site does not receive or store form submissions. There is no database, login, payment system or public content-management dashboard.
+The site uses the owner-supplied Splash Kids logo, links to the Facebook page, and provides call, WhatsApp, email and directions actions. Activity-photo credits are not rendered on the public site; their source and license details remain in `PHOTO-SOURCES.md`. The enquiry form prepares a WhatsApp message on the visitor’s device and does not receive or store submissions. There is no database, login, payment system or content-management dashboard.
 
-## Recommended platform and hosting
+## Cloudflare Pages setup
 
-For the current informational website, keep the existing static Webdev deployment. It avoids maintaining an application server and database while still supporting all current pages, direct contact links, route-specific static HTML and future content changes. Keep online ticket sales, reservations and secure server-side enquiries out of scope until management approves the workflow and operating rules.
+The canonical repository is [sergems/splashwater](https://github.com/sergems/splashwater), with `main` as the recommended production branch. The project is prepared for Cloudflare Pages Git integration, with the build command `pnpm run build:static` and output directory `dist/public`; the Cloudflare project has not yet been created. `.nvmrc` pins Node.js 22.23.4; set the Cloudflare build variable `PNPM_VERSION=10.18.0` for both Production and Preview. The source-controlled Pages metadata is in `wrangler.jsonc`; step-by-step account setup and official references are in `CLOUDFLARE-PAGES.md`.
 
-A verified custom domain can be connected once the owner confirms domain control and DNS access. Canonical URLs are intentionally not guessed in the current metadata. Before launch, use the selected public domain to check the canonical/share settings, HTTPS behavior, generated sitemap/robots responses, enquiry links and map location. Social links should be expanded only after the official account URLs are confirmed.
+All site-visible logo and activity images are now stored in `client/public/images/`, so the deployed pages do not depend on Manus Storage. The static build does not need a runtime server, database, API key or Cloudflare binding. Cloudflare account authorization, Pages project creation, deployment and DNS/domain changes have not been performed.
+
+No public domain was supplied. Canonical URLs and an absolute-URL sitemap should be finalized only after the actual public origin is selected. The current social-preview image remains on a public Manus CDN URL until a production origin is known; it can then be updated to the checked-in logo asset.
 
 ## Updating the website
 
-Contact details, activity and facility lists, planning estimates, visitor assumptions, party enquiry types, safety guidance and FAQs are centralized in `client/src/data/parkContent.ts`. Comparator evidence and the assumptions behind the estimates are documented in `CONTENT-ESTIMATES.md`; photo provenance is documented in `PHOTO-SOURCES.md`. Page titles and descriptions are in `client/src/data/routeMeta.ts`. Updates to the source require a project edit, build and release; there is no management-facing CMS or content login. Approved gallery media should be uploaded through project storage and then added to the gallery content. Do not use generic generated or unrelated venue imagery as if it were a photograph of Splash Kids.
+Contact details, activity and facility lists, planning estimates, visitor assumptions, party enquiry types, safety guidance and FAQs are centralized in `client/src/data/parkContent.ts`. Comparator evidence is documented in `CONTENT-ESTIMATES.md`; photo provenance is in `PHOTO-SOURCES.md`. Page titles and descriptions are in `client/src/data/routeMeta.ts`. Approved future venue photographs should be added to `client/public/images/` with permissions and source information; do not rely on Manus Storage URLs in a Cloudflare deployment or present generic images as photos of Splash Kids.
 
-Build command: `pnpm build:static`. Static output: `dist/public`. TypeScript check: `pnpm check`.
+Build command: `pnpm run build:static`. Static output: `dist/public`. TypeScript check: `pnpm check`.
 
 ## Indicative timeline and costs
 
 The website implementation is complete. Allow approximately **1–3 working days after all required approved copy, venue media, legal review and domain/DNS access arrive** for focused content-finalisation, a launch check and release. This is a planning estimate, not a contracted schedule; legal review, a new CMS, payments, reservations or other integrations would add time.
 
-No once-off design/development quote or annual service prices were supplied with the brief. The Manus hosting charge is account/plan-specific and is not visible in this project; a domain registrar, support level and maintenance scope have not been selected. No domain, hosting, security/maintenance or future-update amount is estimated here because provider, term and scope are unspecified. Platform analytics injection is disabled and no Google Analytics product has been added; platform/CDN telemetry and the data practices of Google Maps, Google Fonts, WhatsApp and other providers may still apply. Review provider terms and any fees before adding a CMS, newsletter, payment processing or booking integrations.
+No once-off design/development quote or annual service prices were supplied with the brief. Cloudflare plan charges, domain-registration costs, support level and maintenance scope have not been selected or quoted. No domain, hosting, security/maintenance or future-update amount is estimated here because provider, term and scope are unspecified. Platform analytics injection is disabled and no Google Analytics product has been added; the data practices of Google Maps, Google Fonts, WhatsApp and other providers may still apply. Review provider terms and any fees before adding a CMS, newsletter, payment processing or booking integrations.
 
-## Ownership, support and maintenance
+## Ownership, support and management items before launch
 
-The code and project changes are versioned in the current Webdev project. Before handover, management should identify who has administrator access to the hosting/project account, source repository, domain registrar, business email and Facebook page. There is no administrator-facing content editor today. A post-launch support/maintenance arrangement and training session have not been priced or scheduled; if desired, agree who updates content, handles urgent corrections and checks third-party dependencies.
+Management should identify who has administrator access to the Cloudflare account, GitHub repository, domain registrar, business email and Facebook page. There is no administrator-facing content editor today. A post-launch support/maintenance arrangement and training session have not been priced or scheduled; if desired, agree who updates content and handles urgent corrections.
 
-## Management items required before public launch
-
-1. Owner-approved opening days/times and public-holiday arrangements to replace the planning estimate.
-2. Owner-approved prices, age brackets, packages, booking, walk-in, payment, cancellation, refund and weather rules.
-3. Official age/height/weight limits, lifeguard coverage, first-aid and emergency contacts, lost-child procedures, thunderstorm rules and other safety arrangements. No numeric safety limits are guessed on the public site.
-4. Approved parking, ablutions, changing rooms/showers, lockers, food sales, shade, accessibility and any charges.
-5. An accurate entrance/map pin and permission to use the location details.
-6. Genuine, approved park/facility photos and any promotional video; parent/guardian permissions before publishing identifiable children.
-7. Owner verification that the supplied telephone/WhatsApp number is current. A public Facebook listing shows a different number; the website retains the number supplied in the brief.
-8. Final management/legal review of the Terms & Conditions and Privacy Policy, including POPIA responsibilities, retention, cookies and any consent requirements.
-9. Custom domain, DNS access, social links, analytics choice (if any), CMS preference and content-update ownership.
-10. Quote/approval for domain, hosting, support, third-party subscriptions and any future booking/payment integrations.
+Before public launch, obtain owner-approved opening days/times and prices; booking, payment, cancellation, refund and weather policies; attraction restrictions, safety and first-aid procedures; facility availability and charges; an accurate entrance/map pin; genuine park photographs and permissions for identifiable children; verification of the supplied contact details; legal review of the Terms & Conditions and Privacy Policy; and the actual domain/DNS and social links. The public site uses clearly labeled estimates until management replaces them.
