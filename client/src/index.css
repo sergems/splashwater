@@ -816,8 +816,8 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.035em; }
   align-items: center;
   gap: clamp(17px, 2.8vw, 34px);
 }
-.nav-group-left { justify-self: start; }
-.nav-group-right { justify-self: end; }
+.nav-group-left { justify-self: end; margin-right: 77px; }
+.nav-group-right { justify-self: start; margin-left: 77px; }
 .main-nav a {
   display: inline-flex;
   align-items: center;
@@ -843,6 +843,8 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.035em; }
   .brand-lockup { width: 108px; height: 58px; flex-basis: 108px; }
   .main-nav { font-size: 12px; }
   .nav-group { gap: 14px; }
+  .nav-group-left { margin-right: 68px; }
+  .nav-group-right { margin-left: 68px; }
 }
 
 @media (max-width: 760px) {
@@ -880,6 +882,7 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.035em; }
   }
   .main-nav.is-open { display: grid; }
   .nav-group { flex-direction: column; align-items: stretch; gap: 4px; }
+  .nav-group-left, .nav-group-right { justify-self: stretch; margin: 0; }
   .main-nav a { width: 100%; min-height: 44px; padding: 13px 14px; border-radius: 12px; }
   .main-nav .nav-enquiry-link:hover { border-radius: 12px; background: #f6f4fa; text-decoration: none; }
 }
